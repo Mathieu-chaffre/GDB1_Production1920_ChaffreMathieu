@@ -1,0 +1,650 @@
+{
+	"textures": [
+		{
+			"image": "skate_trick_2.png",
+			"format": "RGBA8888",
+			"size": {
+				"w": 1799,
+				"h": 2032
+			},
+			"scale": 1,
+			"frames": [
+				{
+					"filename": "skate_tricks_20020.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 340,
+						"h": 423
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 8,
+						"w": 340,
+						"h": 360
+					},
+					"frame": {
+						"x": 1,
+						"y": 1,
+						"w": 340,
+						"h": 360
+					}
+				},
+				{
+					"filename": "skate_tricks_20021.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 340,
+						"h": 423
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 7,
+						"w": 331,
+						"h": 369
+					},
+					"frame": {
+						"x": 343,
+						"y": 1,
+						"w": 331,
+						"h": 369
+					}
+				},
+				{
+					"filename": "skate_tricks_20019.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 340,
+						"h": 423
+					},
+					"spriteSourceSize": {
+						"x": 2,
+						"y": 8,
+						"w": 338,
+						"h": 371
+					},
+					"frame": {
+						"x": 676,
+						"y": 1,
+						"w": 338,
+						"h": 371
+					}
+				},
+				{
+					"filename": "skate_tricks_20022.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 340,
+						"h": 423
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 6,
+						"w": 328,
+						"h": 378
+					},
+					"frame": {
+						"x": 1016,
+						"y": 1,
+						"w": 328,
+						"h": 378
+					}
+				},
+				{
+					"filename": "skate_tricks_20018.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 340,
+						"h": 423
+					},
+					"spriteSourceSize": {
+						"x": 6,
+						"y": 9,
+						"w": 330,
+						"h": 383
+					},
+					"frame": {
+						"x": 1346,
+						"y": 1,
+						"w": 330,
+						"h": 383
+					}
+				},
+				{
+					"filename": "skate_tricks_20023.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 340,
+						"h": 423
+					},
+					"spriteSourceSize": {
+						"x": 1,
+						"y": 5,
+						"w": 323,
+						"h": 387
+					},
+					"frame": {
+						"x": 1,
+						"y": 363,
+						"w": 323,
+						"h": 387
+					}
+				},
+				{
+					"filename": "skate_tricks_20024.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 340,
+						"h": 423
+					},
+					"spriteSourceSize": {
+						"x": 4,
+						"y": 5,
+						"w": 315,
+						"h": 395
+					},
+					"frame": {
+						"x": 326,
+						"y": 372,
+						"w": 315,
+						"h": 395
+					}
+				},
+				{
+					"filename": "skate_tricks_20017.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 340,
+						"h": 423
+					},
+					"spriteSourceSize": {
+						"x": 10,
+						"y": 10,
+						"w": 314,
+						"h": 398
+					},
+					"frame": {
+						"x": 643,
+						"y": 374,
+						"w": 314,
+						"h": 398
+					}
+				},
+				{
+					"filename": "skate_tricks_20025.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 340,
+						"h": 423
+					},
+					"spriteSourceSize": {
+						"x": 8,
+						"y": 4,
+						"w": 309,
+						"h": 398
+					},
+					"frame": {
+						"x": 959,
+						"y": 381,
+						"w": 309,
+						"h": 398
+					}
+				},
+				{
+					"filename": "skate_tricks_20026.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 340,
+						"h": 423
+					},
+					"spriteSourceSize": {
+						"x": 13,
+						"y": 3,
+						"w": 303,
+						"h": 401
+					},
+					"frame": {
+						"x": 1270,
+						"y": 386,
+						"w": 303,
+						"h": 401
+					}
+				},
+				{
+					"filename": "skate_tricks_20005.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 340,
+						"h": 423
+					},
+					"spriteSourceSize": {
+						"x": 90,
+						"y": 0,
+						"w": 223,
+						"h": 410
+					},
+					"frame": {
+						"x": 1575,
+						"y": 386,
+						"w": 223,
+						"h": 410
+					}
+				},
+				{
+					"filename": "skate_tricks_20014.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 340,
+						"h": 423
+					},
+					"spriteSourceSize": {
+						"x": 30,
+						"y": 8,
+						"w": 284,
+						"h": 402
+					},
+					"frame": {
+						"x": 1,
+						"y": 752,
+						"w": 284,
+						"h": 402
+					}
+				},
+				{
+					"filename": "skate_tricks_20027.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 340,
+						"h": 423
+					},
+					"spriteSourceSize": {
+						"x": 18,
+						"y": 2,
+						"w": 297,
+						"h": 403
+					},
+					"frame": {
+						"x": 287,
+						"y": 769,
+						"w": 297,
+						"h": 403
+					}
+				},
+				{
+					"filename": "skate_tricks_20013.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 340,
+						"h": 423
+					},
+					"spriteSourceSize": {
+						"x": 38,
+						"y": 6,
+						"w": 281,
+						"h": 404
+					},
+					"frame": {
+						"x": 586,
+						"y": 774,
+						"w": 281,
+						"h": 404
+					}
+				},
+				{
+					"filename": "skate_tricks_20012.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 340,
+						"h": 423
+					},
+					"spriteSourceSize": {
+						"x": 56,
+						"y": 5,
+						"w": 257,
+						"h": 405
+					},
+					"frame": {
+						"x": 869,
+						"y": 781,
+						"w": 257,
+						"h": 405
+					}
+				},
+				{
+					"filename": "skate_tricks_20028.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 340,
+						"h": 423
+					},
+					"spriteSourceSize": {
+						"x": 24,
+						"y": 1,
+						"w": 290,
+						"h": 406
+					},
+					"frame": {
+						"x": 1128,
+						"y": 789,
+						"w": 290,
+						"h": 406
+					}
+				},
+				{
+					"filename": "skate_tricks_20011.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 340,
+						"h": 423
+					},
+					"spriteSourceSize": {
+						"x": 56,
+						"y": 3,
+						"w": 257,
+						"h": 407
+					},
+					"frame": {
+						"x": 1420,
+						"y": 798,
+						"w": 257,
+						"h": 407
+					}
+				},
+				{
+					"filename": "skate_tricks_20029.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 340,
+						"h": 423
+					},
+					"spriteSourceSize": {
+						"x": 31,
+						"y": 1,
+						"w": 283,
+						"h": 407
+					},
+					"frame": {
+						"x": 1,
+						"y": 1156,
+						"w": 283,
+						"h": 407
+					}
+				},
+				{
+					"filename": "skate_tricks_20010.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 340,
+						"h": 423
+					},
+					"spriteSourceSize": {
+						"x": 55,
+						"y": 2,
+						"w": 258,
+						"h": 408
+					},
+					"frame": {
+						"x": 286,
+						"y": 1174,
+						"w": 258,
+						"h": 408
+					}
+				},
+				{
+					"filename": "skate_tricks_20015.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 340,
+						"h": 423
+					},
+					"spriteSourceSize": {
+						"x": 23,
+						"y": 9,
+						"w": 287,
+						"h": 408
+					},
+					"frame": {
+						"x": 546,
+						"y": 1180,
+						"w": 287,
+						"h": 408
+					}
+				},
+				{
+					"filename": "skate_tricks_20001.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 340,
+						"h": 423
+					},
+					"spriteSourceSize": {
+						"x": 38,
+						"y": 0,
+						"w": 275,
+						"h": 410
+					},
+					"frame": {
+						"x": 835,
+						"y": 1188,
+						"w": 275,
+						"h": 410
+					}
+				},
+				{
+					"filename": "skate_tricks_20002.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 340,
+						"h": 423
+					},
+					"spriteSourceSize": {
+						"x": 51,
+						"y": 0,
+						"w": 262,
+						"h": 410
+					},
+					"frame": {
+						"x": 1112,
+						"y": 1197,
+						"w": 262,
+						"h": 410
+					}
+				},
+				{
+					"filename": "skate_tricks_20003.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 340,
+						"h": 423
+					},
+					"spriteSourceSize": {
+						"x": 65,
+						"y": 0,
+						"w": 248,
+						"h": 410
+					},
+					"frame": {
+						"x": 1376,
+						"y": 1207,
+						"w": 248,
+						"h": 410
+					}
+				},
+				{
+					"filename": "skate_tricks_20004.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 340,
+						"h": 423
+					},
+					"spriteSourceSize": {
+						"x": 78,
+						"y": 0,
+						"w": 235,
+						"h": 410
+					},
+					"frame": {
+						"x": 1,
+						"y": 1565,
+						"w": 235,
+						"h": 410
+					}
+				},
+				{
+					"filename": "skate_tricks_20006.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 340,
+						"h": 423
+					},
+					"spriteSourceSize": {
+						"x": 86,
+						"y": 0,
+						"w": 227,
+						"h": 410
+					},
+					"frame": {
+						"x": 238,
+						"y": 1584,
+						"w": 227,
+						"h": 410
+					}
+				},
+				{
+					"filename": "skate_tricks_20007.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 340,
+						"h": 423
+					},
+					"spriteSourceSize": {
+						"x": 78,
+						"y": 0,
+						"w": 235,
+						"h": 410
+					},
+					"frame": {
+						"x": 467,
+						"y": 1590,
+						"w": 235,
+						"h": 410
+					}
+				},
+				{
+					"filename": "skate_tricks_20008.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 340,
+						"h": 423
+					},
+					"spriteSourceSize": {
+						"x": 70,
+						"y": 0,
+						"w": 243,
+						"h": 410
+					},
+					"frame": {
+						"x": 704,
+						"y": 1600,
+						"w": 243,
+						"h": 410
+					}
+				},
+				{
+					"filename": "skate_tricks_20009.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 340,
+						"h": 423
+					},
+					"spriteSourceSize": {
+						"x": 62,
+						"y": 0,
+						"w": 251,
+						"h": 410
+					},
+					"frame": {
+						"x": 949,
+						"y": 1609,
+						"w": 251,
+						"h": 410
+					}
+				},
+				{
+					"filename": "skate_tricks_20030.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 340,
+						"h": 423
+					},
+					"spriteSourceSize": {
+						"x": 38,
+						"y": 0,
+						"w": 275,
+						"h": 410
+					},
+					"frame": {
+						"x": 1202,
+						"y": 1619,
+						"w": 275,
+						"h": 410
+					}
+				},
+				{
+					"filename": "skate_tricks_20016.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 340,
+						"h": 423
+					},
+					"spriteSourceSize": {
+						"x": 16,
+						"y": 11,
+						"w": 289,
+						"h": 412
+					},
+					"frame": {
+						"x": 1479,
+						"y": 1619,
+						"w": 289,
+						"h": 412
+					}
+				}
+			]
+		}
+	],
+	"meta": {
+		"app": "https://www.codeandweb.com/texturepacker",
+		"version": "3.0",
+		"smartupdate": "$TexturePacker:SmartUpdate:816bcda172629bcee83ee62105f58667:2e91a8fc7c20e944124bcaede8d75054:4c1c965d57ca2cfa1a08f9db602d3028$"
+	}
+}
