@@ -22,7 +22,7 @@ class Scene5 extends Phaser.Scene {
   create(){
     this.rand_number = 0;
     var toucher = 0;
-    this.toucher =0;
+    this.touche =0;
     this.point = 0;
 
     this.physics.world.setBounds(0, 0, 1280, 720);
@@ -78,8 +78,13 @@ class Scene5 extends Phaser.Scene {
         gameObjects[0].y = pointer.y;
         if (pointer.x <= perso.x+150 && pointer.x >= perso.x-150 ) {
           if (pointer.y <= perso.y+150 && pointer.y >= perso.y-150 ) {
-            console.log("touche");
+            toucher = 1;
+            console.log(toucher);
+
           }
+        }
+        else{
+          toucher= 0;
         }
 
 
@@ -87,6 +92,18 @@ class Scene5 extends Phaser.Scene {
     });
 
 
+
+    this.timedEvent = this.time.addEvent({
+      delay: 1000,
+      callback: tets,
+      callbackScope: this,
+      loop: true
+    });
+
+    function tets(){
+      this.touche = toucher;
+      console.log(this.touche);
+    }
 
 
 
@@ -129,15 +146,22 @@ class Scene5 extends Phaser.Scene {
 
 
   update(){
-    if (this.toucher == 1) {
-      this.time.delayedCall(2000, ()=> {
-        this.point +=1;
-        console.log(this.point);
+    if (this.touche == 1) {
+      this.timedEvent = this.time.addEvent({
+        delay: 1000,
+        callback: this.gagnePoint,
+        callbackScope: this,
+        loop: true
       });
+      console.log("point" + this.point);
     }
 
 
 
+  }
+
+  gagnePoint(){
+    this.point +=1;
   }
 
 Test(){
