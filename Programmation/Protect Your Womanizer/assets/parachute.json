@@ -1,0 +1,650 @@
+{
+	"textures": [
+		{
+			"image": "parachute.png",
+			"format": "RGBA8888",
+			"size": {
+				"w": 1909,
+				"h": 1769
+			},
+			"scale": 1,
+			"frames": [
+				{
+					"filename": "parachute_1.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 577,
+						"h": 256
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 35,
+						"w": 577,
+						"h": 205
+					},
+					"frame": {
+						"x": 1,
+						"y": 1,
+						"w": 577,
+						"h": 205
+					}
+				},
+				{
+					"filename": "parachute_30.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 577,
+						"h": 256
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 35,
+						"w": 577,
+						"h": 205
+					},
+					"frame": {
+						"x": 580,
+						"y": 1,
+						"w": 577,
+						"h": 205
+					}
+				},
+				{
+					"filename": "parachute_2.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 577,
+						"h": 256
+					},
+					"spriteSourceSize": {
+						"x": 6,
+						"y": 35,
+						"w": 566,
+						"h": 207
+					},
+					"frame": {
+						"x": 1159,
+						"y": 1,
+						"w": 566,
+						"h": 207
+					}
+				},
+				{
+					"filename": "parachute_24.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 577,
+						"h": 256
+					},
+					"spriteSourceSize": {
+						"x": 52,
+						"y": 40,
+						"w": 478,
+						"h": 207
+					},
+					"frame": {
+						"x": 1,
+						"y": 208,
+						"w": 478,
+						"h": 207
+					}
+				},
+				{
+					"filename": "parachute_27.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 577,
+						"h": 256
+					},
+					"spriteSourceSize": {
+						"x": 22,
+						"y": 37,
+						"w": 535,
+						"h": 207
+					},
+					"frame": {
+						"x": 481,
+						"y": 208,
+						"w": 535,
+						"h": 207
+					}
+				},
+				{
+					"filename": "parachute_28.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 577,
+						"h": 256
+					},
+					"spriteSourceSize": {
+						"x": 13,
+						"y": 36,
+						"w": 552,
+						"h": 207
+					},
+					"frame": {
+						"x": 1018,
+						"y": 210,
+						"w": 552,
+						"h": 207
+					}
+				},
+				{
+					"filename": "parachute_15.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 577,
+						"h": 256
+					},
+					"spriteSourceSize": {
+						"x": 127,
+						"y": 0,
+						"w": 332,
+						"h": 256
+					},
+					"frame": {
+						"x": 1572,
+						"y": 210,
+						"w": 332,
+						"h": 256
+					}
+				},
+				{
+					"filename": "parachute_29.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 577,
+						"h": 256
+					},
+					"spriteSourceSize": {
+						"x": 6,
+						"y": 35,
+						"w": 566,
+						"h": 207
+					},
+					"frame": {
+						"x": 1,
+						"y": 417,
+						"w": 566,
+						"h": 207
+					}
+				},
+				{
+					"filename": "parachute_3.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 577,
+						"h": 256
+					},
+					"spriteSourceSize": {
+						"x": 15,
+						"y": 36,
+						"w": 549,
+						"h": 207
+					},
+					"frame": {
+						"x": 569,
+						"y": 419,
+						"w": 549,
+						"h": 207
+					}
+				},
+				{
+					"filename": "parachute_8.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 577,
+						"h": 256
+					},
+					"spriteSourceSize": {
+						"x": 69,
+						"y": 33,
+						"w": 446,
+						"h": 216
+					},
+					"frame": {
+						"x": 1120,
+						"y": 419,
+						"w": 446,
+						"h": 216
+					}
+				},
+				{
+					"filename": "parachute_14.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 577,
+						"h": 256
+					},
+					"spriteSourceSize": {
+						"x": 123,
+						"y": 1,
+						"w": 340,
+						"h": 255
+					},
+					"frame": {
+						"x": 1568,
+						"y": 468,
+						"w": 340,
+						"h": 255
+					}
+				},
+				{
+					"filename": "parachute_4.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 577,
+						"h": 256
+					},
+					"spriteSourceSize": {
+						"x": 24,
+						"y": 37,
+						"w": 532,
+						"h": 207
+					},
+					"frame": {
+						"x": 1,
+						"y": 626,
+						"w": 532,
+						"h": 207
+					}
+				},
+				{
+					"filename": "parachute_5.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 577,
+						"h": 256
+					},
+					"spriteSourceSize": {
+						"x": 34,
+						"y": 38,
+						"w": 512,
+						"h": 207
+					},
+					"frame": {
+						"x": 535,
+						"y": 628,
+						"w": 512,
+						"h": 207
+					}
+				},
+				{
+					"filename": "parachute_6.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 577,
+						"h": 256
+					},
+					"spriteSourceSize": {
+						"x": 45,
+						"y": 39,
+						"w": 491,
+						"h": 207
+					},
+					"frame": {
+						"x": 1049,
+						"y": 637,
+						"w": 491,
+						"h": 207
+					}
+				},
+				{
+					"filename": "parachute_12.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 577,
+						"h": 256
+					},
+					"spriteSourceSize": {
+						"x": 114,
+						"y": 7,
+						"w": 357,
+						"h": 247
+					},
+					"frame": {
+						"x": 1542,
+						"y": 725,
+						"w": 357,
+						"h": 247
+					}
+				},
+				{
+					"filename": "parachute_25.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 577,
+						"h": 256
+					},
+					"spriteSourceSize": {
+						"x": 41,
+						"y": 38,
+						"w": 499,
+						"h": 208
+					},
+					"frame": {
+						"x": 1,
+						"y": 835,
+						"w": 499,
+						"h": 208
+					}
+				},
+				{
+					"filename": "parachute_26.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 577,
+						"h": 256
+					},
+					"spriteSourceSize": {
+						"x": 31,
+						"y": 37,
+						"w": 518,
+						"h": 208
+					},
+					"frame": {
+						"x": 502,
+						"y": 837,
+						"w": 518,
+						"h": 208
+					}
+				},
+				{
+					"filename": "parachute_7.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 577,
+						"h": 256
+					},
+					"spriteSourceSize": {
+						"x": 57,
+						"y": 40,
+						"w": 469,
+						"h": 208
+					},
+					"frame": {
+						"x": 1022,
+						"y": 846,
+						"w": 469,
+						"h": 208
+					}
+				},
+				{
+					"filename": "parachute_21.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 577,
+						"h": 256
+					},
+					"spriteSourceSize": {
+						"x": 86,
+						"y": 22,
+						"w": 412,
+						"h": 229
+					},
+					"frame": {
+						"x": 1493,
+						"y": 974,
+						"w": 412,
+						"h": 229
+					}
+				},
+				{
+					"filename": "parachute_23.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 577,
+						"h": 256
+					},
+					"spriteSourceSize": {
+						"x": 63,
+						"y": 37,
+						"w": 457,
+						"h": 211
+					},
+					"frame": {
+						"x": 1,
+						"y": 1045,
+						"w": 457,
+						"h": 211
+					}
+				},
+				{
+					"filename": "parachute_22.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 577,
+						"h": 256
+					},
+					"spriteSourceSize": {
+						"x": 75,
+						"y": 29,
+						"w": 434,
+						"h": 220
+					},
+					"frame": {
+						"x": 460,
+						"y": 1047,
+						"w": 434,
+						"h": 220
+					}
+				},
+				{
+					"filename": "parachute_9.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 577,
+						"h": 256
+					},
+					"spriteSourceSize": {
+						"x": 81,
+						"y": 25,
+						"w": 422,
+						"h": 225
+					},
+					"frame": {
+						"x": 896,
+						"y": 1056,
+						"w": 422,
+						"h": 225
+					}
+				},
+				{
+					"filename": "parachute_10.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 577,
+						"h": 256
+					},
+					"spriteSourceSize": {
+						"x": 93,
+						"y": 18,
+						"w": 399,
+						"h": 233
+					},
+					"frame": {
+						"x": 1320,
+						"y": 1205,
+						"w": 399,
+						"h": 233
+					}
+				},
+				{
+					"filename": "parachute_20.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 577,
+						"h": 256
+					},
+					"spriteSourceSize": {
+						"x": 97,
+						"y": 16,
+						"w": 392,
+						"h": 236
+					},
+					"frame": {
+						"x": 1,
+						"y": 1258,
+						"w": 392,
+						"h": 236
+					}
+				},
+				{
+					"filename": "parachute_11.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 577,
+						"h": 256
+					},
+					"spriteSourceSize": {
+						"x": 105,
+						"y": 12,
+						"w": 377,
+						"h": 241
+					},
+					"frame": {
+						"x": 395,
+						"y": 1269,
+						"w": 377,
+						"h": 241
+					}
+				},
+				{
+					"filename": "parachute_19.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 577,
+						"h": 256
+					},
+					"spriteSourceSize": {
+						"x": 108,
+						"y": 11,
+						"w": 371,
+						"h": 242
+					},
+					"frame": {
+						"x": 774,
+						"y": 1283,
+						"w": 371,
+						"h": 242
+					}
+				},
+				{
+					"filename": "parachute_18.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 577,
+						"h": 256
+					},
+					"spriteSourceSize": {
+						"x": 114,
+						"y": 6,
+						"w": 356,
+						"h": 248
+					},
+					"frame": {
+						"x": 1147,
+						"y": 1440,
+						"w": 356,
+						"h": 248
+					}
+				},
+				{
+					"filename": "parachute_13.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 577,
+						"h": 256
+					},
+					"spriteSourceSize": {
+						"x": 118,
+						"y": 3,
+						"w": 349,
+						"h": 252
+					},
+					"frame": {
+						"x": 1505,
+						"y": 1440,
+						"w": 349,
+						"h": 252
+					}
+				},
+				{
+					"filename": "parachute_17.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 577,
+						"h": 256
+					},
+					"spriteSourceSize": {
+						"x": 119,
+						"y": 3,
+						"w": 348,
+						"h": 252
+					},
+					"frame": {
+						"x": 1,
+						"y": 1496,
+						"w": 348,
+						"h": 252
+					}
+				},
+				{
+					"filename": "parachute_16.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 577,
+						"h": 256
+					},
+					"spriteSourceSize": {
+						"x": 123,
+						"y": 0,
+						"w": 340,
+						"h": 256
+					},
+					"frame": {
+						"x": 351,
+						"y": 1512,
+						"w": 340,
+						"h": 256
+					}
+				}
+			]
+		}
+	],
+	"meta": {
+		"app": "https://www.codeandweb.com/texturepacker",
+		"version": "3.0",
+		"smartupdate": "$TexturePacker:SmartUpdate:2d638fa78ba5a76d7c72761a595616e7:fff389bfcd631b957372e9cd49f5cb72:befe6512830e79d521be66bd91629beb$"
+	}
+}
