@@ -21,6 +21,7 @@ class Scene4 extends Phaser.Scene {
   }
 
   create(){
+    this.rand_number = 0;
     this.anime = 0;
     this.bouton_toucher = 0;
     this.rand_number = 0;
@@ -162,7 +163,25 @@ class Scene4 extends Phaser.Scene {
 
 HitBouton(){
   console.log("touché");
+
+  this.rand_number = Phaser.Math.Between(1,2);
   this.bouton_toucher = 1;
+  if (this.rand_number == 1) {
+    this.perso.anims.play("skate_tricks");
+
+    this.time.delayedCall(800, ()=> {
+      this.perso.anims.play("skate_avance");
+
+    });
+
+  }
+  else if (this.rand_number == 2) {
+    this.perso.anims.play("skate_tricks_2");
+    this.time.delayedCall(500, ()=> {
+      this.perso.anims.play("skate_avance");
+
+    });
+  }
 
   this.time.delayedCall(800, ()=> {
     this.bouton_toucher = 0;
