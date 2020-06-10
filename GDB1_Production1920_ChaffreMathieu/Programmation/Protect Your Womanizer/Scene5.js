@@ -8,10 +8,12 @@ class Scene5 extends Phaser.Scene {
   }
 
   preload(){
-    this.load.image()
+    this.load.image("landscape_dance", "assets/landscape_dance.png");
   }
 
   create(){
+
+    this.land_scape = this.add.image(0,0, "landscape_dance").setOrigin(0,0);
 
   }
 
