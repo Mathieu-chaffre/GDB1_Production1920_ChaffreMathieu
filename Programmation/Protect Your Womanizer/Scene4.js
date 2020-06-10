@@ -161,7 +161,6 @@ class Scene4 extends Phaser.Scene {
   }
 
   HitBouton(){
-    console.log("touché");
 
     this.rand_number = Phaser.Math.Between(1,2);
     this.bouton_toucher = 1;
