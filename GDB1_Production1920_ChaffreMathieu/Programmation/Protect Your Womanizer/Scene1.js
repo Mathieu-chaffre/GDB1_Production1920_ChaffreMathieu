@@ -39,6 +39,7 @@ class Scene1 extends Phaser.Scene {
     this.button.on("pointerdown", this.Test, this);
 
     this.compteur_echec = 3;
+    this.score = 0;
 
 
 
@@ -51,7 +52,7 @@ class Scene1 extends Phaser.Scene {
   }
 
   Test(){
-    this.scene.start("deuxieme_scene", {compteur_echec: this.compteur_echec});
+    this.scene.start("deuxieme_scene", {compteur_echec: this.compteur_echec, score: this.score});
   }
 
 }

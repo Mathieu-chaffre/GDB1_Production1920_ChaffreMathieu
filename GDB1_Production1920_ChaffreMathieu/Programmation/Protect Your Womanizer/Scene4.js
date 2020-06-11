@@ -5,6 +5,7 @@ class Scene4 extends Phaser.Scene {
 
   init(data){
     this.compteur_echec= data.compteur_echec;
+    this.score = data.score;
   }
 
   preload(){
@@ -22,10 +23,12 @@ class Scene4 extends Phaser.Scene {
 
   create(){
     this.scene_compte = 2;
-    this.anime = 0;
+
+
     this.bouton_toucher = 0;
     this.rand_number = 0;
     this.add.image(0,0, "landscape_skate").setOrigin(0,0);
+    this.text = this.add.text(150, 475, "Réalise des tricks ! ", {fontSize: '75px', fill: 'white', fontStyle: "bold"});
     this.perso = this.matter.add.sprite(20, 80, 'skate_avance', 'skate_avance_001.png');
     this.perso.setScale(0.7);
 
@@ -71,7 +74,8 @@ class Scene4 extends Phaser.Scene {
             text.setText(formatTime(this.initialTime));
             }
             if(this.initialTime <= 0){
-              this.scene.start("troisieme_scene", {compteur_echec: this.compteur_echec, scene_compte: this.scene_compte});
+              this.score += 10;
+              this.scene.start("troisieme_scene", {compteur_echec: this.compteur_echec, scene_compte: this.scene_compte, score : this.score});
 
             }
 
@@ -133,7 +137,7 @@ class Scene4 extends Phaser.Scene {
           if (this.bouton_toucher == 0) {
 
             this.compteur_echec -=1;
-            this.scene.start("troisieme_scene", {compteur_echec: this.compteur_echec, scene_compte: this.scene_compte});
+            this.scene.start("troisieme_scene", {compteur_echec: this.compteur_echec, scene_compte: this.scene_compte, score: this.score});
 
 
           }
@@ -143,6 +147,8 @@ class Scene4 extends Phaser.Scene {
 
 
       this.bouton_tricks.on("pointerdown", this.HitBouton, this);
+
+
 
 
   }
