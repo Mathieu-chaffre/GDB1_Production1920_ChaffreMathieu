@@ -16,6 +16,7 @@ class Scene2 extends Phaser.Scene {
 
     init(data){
       this.compteur_echec = data.compteur_echec;
+      this.score = data.score;
     }
 
   preload(){
@@ -82,6 +83,9 @@ class Scene2 extends Phaser.Scene {
 
     this.immeuble.body.label = "immeuble";
 
+    this.immeuble_2 = this.matter.add.image(-200, 4200, "immeuble", null, { isStatic: true });
+    this.immeuble_2.body.label = "immeuble_2";
+
 
 
     this.matter.world.on('collisionstart', function (event) {
@@ -92,9 +96,17 @@ class Scene2 extends Phaser.Scene {
 
             if ((bodyA.label === 'perso' && bodyB.label === 'immeuble') || (bodyB.label === 'immeuble' && bodyA.label === 'perso')) {
               if (this.perso.y < 2415) {
-                this.scene.start("troisieme_scene", {compteur_echec: this.compteur_echec, scene_compte: this.scene_compte});
+                this.score += 10 * this.initialTime;
+                this.scene.start("troisieme_scene", {compteur_echec: this.compteur_echec, scene_compte: this.scene_compte, score: this.score});
 
               }
+            }
+            else if ((bodyA.label === 'perso' && bodyB.label === 'immeuble_2') || (bodyB.label === 'immeuble_2' && bodyA.label === 'perso')) {
+              if (this.perso.y < 4200) {
+                this.score += 10*this.initialTime;
+                this.scene.start("troisieme_scene", {compteur_echec: this.compteur_echec, scene_compte: this.scene_compte, score: this.score});
+              }
+
             }
         }
     }, this);
@@ -147,12 +159,14 @@ function getRootBody(body) {
 
   update(){
 
+    console.log(this.perso.y);
+
     if (this.perso.y >= 4105) {
       this.perso.anims.play('boom', true);
       this.perso.y = 4105;
       this.time.delayedCall(2000, ()=> {
         this.compteur_echec -=1;
-        this.scene.start("troisieme_scene", {compteur_echec: this.compteur_echec, scene_compte: this.scene_compte});
+        this.scene.start("troisieme_scene", {compteur_echec: this.compteur_echec, scene_compte: this.scene_compte, score: this.score});
 
       });
 
