@@ -1,9 +1,9 @@
 class Scene5 extends Phaser.Scene {
   constructor() {
     super({ key: 'cinquieme_scene', physics: {arcade: {
-      debug: true,
+      debug: false,
       gravity: {
-          y: 200
+          y: 1000
       },
     }} });
   }
@@ -47,9 +47,9 @@ class Scene5 extends Phaser.Scene {
     });
 
 
+    this.rand_pos_x= Phaser.Math.Between(50, 1200);
 
-
-     var perso = this.physics.add.sprite(800,10, 'dance', "dance_perso_1001.png");
+     var perso = this.physics.add.sprite(this.rand_pos_x,700, 'dance', "dance_perso_1001.png");
 
     this.frameName = this.anims.generateFrameNames('dance', {
                            start: 1, end: 30, zeroPad: 1,
@@ -60,7 +60,7 @@ class Scene5 extends Phaser.Scene {
 
     perso.anims.play("danse", true);
 
-    this.perso_2 = this.physics.add.sprite(120,10, 'dance_2', "perso_dance_2001.png");
+    this.perso_2 = this.physics.add.sprite(120,700, 'dance_2', "perso_dance_2001.png");
 
 
 
@@ -73,7 +73,7 @@ class Scene5 extends Phaser.Scene {
 
     this.perso_2.anims.play("danse_2");
 
-    this.perso_3 = this.physics.add.sprite(200, 10, "dance_3", "dance_perso_3001.png");
+    this.perso_3 = this.physics.add.sprite(200, 700, "dance_3", "dance_perso_3001.png");
 
     this.frameName_dance_3 = this.anims.generateFrameNames('dance_3', {
                            start: 1, end: 30, zeroPad: 1,

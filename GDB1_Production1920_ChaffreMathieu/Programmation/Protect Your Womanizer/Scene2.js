@@ -3,7 +3,7 @@ class Scene2 extends Phaser.Scene {
 
     //test de plusieurs moteurs physics
     super({ key: 'deuxieme_scene', physics: {matter: {
-      debug: true,
+      debug: false,
       gravity: {
           y: 0.2
       },
@@ -32,6 +32,7 @@ class Scene2 extends Phaser.Scene {
   }
 
   create(){
+    this.reussis = 0;
     this.scene_compte = 1;
     this.fond = this.add.image(0,0, "landscape_parachute").setOrigin(0,0);
 
@@ -94,16 +95,20 @@ class Scene2 extends Phaser.Scene {
             console.log(bodyA);
 
             if ((bodyA.label === 'perso' && bodyB.label === 'immeuble') || (bodyB.label === 'immeuble' && bodyA.label === 'perso')) {
-              if (this.perso.y < 2415) {
+              if (this.perso.y < 2440) {
                 this.score += 10 * this.initialTime;
-                this.scene.start("troisieme_scene", {compteur_echec: this.compteur_echec, scene_compte: this.scene_compte, score: this.score});
+                this.reussis = 1;
+                this.scene.start("troisieme_scene", {compteur_echec: this.compteur_echec, scene_compte: this.scene_compte, score: this.score, reussis: this.reussis});
 
               }
             }
             else if ((bodyA.label === 'perso' && bodyB.label === 'immeuble_2') || (bodyB.label === 'immeuble_2' && bodyA.label === 'perso')) {
-              if (this.perso.y < 4200) {
+              if (this.perso.y < 3220) {
+
                 this.score += 10*this.initialTime;
-                this.scene.start("troisieme_scene", {compteur_echec: this.compteur_echec, scene_compte: this.scene_compte, score: this.score});
+                this.reussis = 1;
+                console.log(this.reussis);
+                this.scene.start("troisieme_scene", {compteur_echec: this.compteur_echec, scene_compte: this.scene_compte, score: this.score, reussis: this.reussis});
               }
 
             }
@@ -165,7 +170,8 @@ function getRootBody(body) {
       this.perso.y = 4105;
       this.time.delayedCall(2000, ()=> {
         this.compteur_echec -=1;
-        this.scene.start("troisieme_scene", {compteur_echec: this.compteur_echec, scene_compte: this.scene_compte, score: this.score});
+        this.reussis = 0;
+        this.scene.start("troisieme_scene", {compteur_echec: this.compteur_echec, scene_compte: this.scene_compte, score: this.score, reussis: this.reussis});
 
       });
 

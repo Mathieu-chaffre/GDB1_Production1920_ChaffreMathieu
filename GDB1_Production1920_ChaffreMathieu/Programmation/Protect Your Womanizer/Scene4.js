@@ -75,7 +75,8 @@ class Scene4 extends Phaser.Scene {
             }
             if(this.initialTime <= 0){
               this.score += 10;
-              this.scene.start("troisieme_scene", {compteur_echec: this.compteur_echec, scene_compte: this.scene_compte, score : this.score});
+              this.reussis = 1;
+              this.scene.start("troisieme_scene", {compteur_echec: this.compteur_echec, scene_compte: this.scene_compte, score : this.score, reussis: this.reussis});
 
             }
 
@@ -124,20 +125,21 @@ class Scene4 extends Phaser.Scene {
 
         console.log("fait visible");
         this.rand_x = Phaser.Math.Between(this.perso.x-150, this.perso.x+600);
-        this.rand_y = Phaser.Math.Between(this.perso.y-500, this.perso.y);
+        this.rand_y = Phaser.Math.Between(this.perso.y-450, this.perso.y);
         this.bouton_tricks.setPosition(this.rand_x, this.rand_y);
         this.bouton_tricks.visible = true;
         console.log(this.bouton_tricks.y);
         console.log(this.bouton_tricks.x);
         console.log(this.perso.x);
 
-        this.time.delayedCall(700, ()=> {
+        this.time.delayedCall(800, ()=> {
           console.log(this.bouton_toucher);
           this.bouton_tricks.visible = false;
           if (this.bouton_toucher == 0) {
 
             this.compteur_echec -=1;
-            this.scene.start("troisieme_scene", {compteur_echec: this.compteur_echec, scene_compte: this.scene_compte, score: this.score});
+            this.reussis = 0;
+            this.scene.start("troisieme_scene", {compteur_echec: this.compteur_echec, scene_compte: this.scene_compte, score: this.score, reussis:this.reussis});
 
 
           }

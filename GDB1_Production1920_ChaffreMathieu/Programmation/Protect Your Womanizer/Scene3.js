@@ -12,6 +12,7 @@ class Scene3 extends Phaser.Scene {
     this.compteur_echec = data.compteur_echec;
     this.scene_compte = data.scene_compte;
     this.score = data.score;
+    this.reussis = data.reussis;
   }
 
   preload(){
@@ -19,10 +20,13 @@ class Scene3 extends Phaser.Scene {
     this.load.image("coeur", "assets/coeur_scene_transition.png");
     this.load.image("pause", "assets/bouton_pause.png");
     this.load.image("pause_presse", "assets/bouton_pause_press.png");
+    this.load.audio('applause', "assets/applause.ogg");
 
   }
 
   create(){
+    this.sound.add('applause');
+
     this.pause_ = 1;
     this.add.image(0,0, "fond").setOrigin(0,0);
     this.add.image(641, 339, "coeur");
@@ -36,7 +40,7 @@ class Scene3 extends Phaser.Scene {
     this.pause.on("pointerdown", this.Pause, this);
     this.pause_2.on("pointerdown", this.Unpause, this);
 
-    this.timedEvent = this.time.addEvent({ delay: 3000, callback: onEvent, callbackScope: this, repeat: -1 });
+    this.timedEvent = this.time.addEvent({ delay: 4000, callback: onEvent, callbackScope: this, repeat: -1 });
     function onEvent(){
       if (this.pause_ == 1) {
         if (this.scene_compte == 1) {
@@ -48,6 +52,11 @@ class Scene3 extends Phaser.Scene {
 
       }
     };
+
+    console.log(this.reussis)
+    if (this.reussis == 1) {
+      this.sound.play('applause', {volume: 1});
+    }
 
 
   }

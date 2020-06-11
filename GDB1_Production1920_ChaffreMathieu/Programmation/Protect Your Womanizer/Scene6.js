@@ -22,6 +22,10 @@ class Scene6 extends Phaser.Scene {
 
     this.text = this.add.text(410,576,"Ton score est : " + this.score, {fontSize: '40px', fill:'white', fontStyle: "bold"});
 
+    if (this.score > 30) {
+      this.sound.play('applause', {volume: 1});
+    }
+
 
 
 
