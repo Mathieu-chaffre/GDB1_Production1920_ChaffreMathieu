@@ -1,3 +1,4 @@
+
 class Scene1 extends Phaser.Scene {
   constructor() {
     super("premiere_scene");
@@ -12,10 +13,13 @@ class Scene1 extends Phaser.Scene {
     this.load.image("logo", "assets/logo.png");
     this.load.image("play", "assets/bouton_play.png");
     this.load.image("pointover", "assets/bouton_play_2.png");
+    this.load.audio('theme', "assets/son_menu.ogg");
 
   }
 
   create(){
+    this.sound.add('theme');
+
 
     this.add.image(0,0, "fond").setOrigin(0,0);
     this.add.image(639, 234, "logo");
@@ -36,9 +40,13 @@ class Scene1 extends Phaser.Scene {
     });
 
 
-    this.button.on("pointerdown", this.Test, this);
+    this.button.on("pointerdown", this.Click, this);
 
     this.compteur_echec = 3;
+
+
+  this.sound.play('theme');
+
 
 
 
@@ -50,8 +58,8 @@ class Scene1 extends Phaser.Scene {
 
   }
 
-  Test(){
-    this.scene.start("deuxieme_scene", {compteur_echec: this.compteur_echec});
+  Click(){
+    this.scene.start("deuxieme_scene", {compteur_echec: this.compteur_echec, score: this.score});
   }
 
 }

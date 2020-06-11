@@ -32,7 +32,7 @@ class Scene3 extends Phaser.Scene {
 
 
 
-    this.pause.on("pointerdown", this.Test, this);
+    this.pause.on("pointerdown", this.Pause, this);
     this.pause_2.on("pointerdown", this.Unpause, this);
 
     this.timedEvent = this.time.addEvent({ delay: 3000, callback: onEvent, callbackScope: this, repeat: -1 });
@@ -58,7 +58,7 @@ class Scene3 extends Phaser.Scene {
 
   }
 
-  Test(){
+  Pause(){
     this.pause_ = 0;
     this.physics.pause();
     console.log("pause");

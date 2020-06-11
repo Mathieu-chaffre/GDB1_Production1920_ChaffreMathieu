@@ -237,8 +237,5 @@ class Scene5 extends Phaser.Scene {
     this.point +=1;
   }
 
-Test(){
-  console.log("touché");
-}
 
 }

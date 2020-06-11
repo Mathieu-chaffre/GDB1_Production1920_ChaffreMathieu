@@ -20,7 +20,6 @@ class Scene2 extends Phaser.Scene {
 
   preload(){
     this.load.image("landscape_parachute", "assets/landscape_parachute.png");
-    this.load.image("test", "assets/bouton_tricks.png");
     this.load.image("immeuble", "assets/immeuble.png");
     this.load.multiatlas('parachute', 'assets/parachute.json', 'assets');
     this.load.multiatlas("boom", "assets/boom.json", "assets");
