@@ -21,6 +21,11 @@ class Scene5 extends Phaser.Scene {
   }
 
   create(){
+
+    this.text = this.add.text(50,100, "Eclaire ton\n dragueur !", {fontSize: '75px', fill: 'white', fontStyle: "bold"});
+    this.time.delayedCall(2000, ()=> {
+      this.text.visible = false;
+    });
     this.rand_number = 0;
     var toucher = 0;
     //this.touche =0;
@@ -125,7 +130,7 @@ class Scene5 extends Phaser.Scene {
           console.log(this.point);
         }
 
-        this.time.delayedCall(2000, ()=> {
+        this.time.delayedCall(1000, ()=> {
           this.temps = 0;
         });
       }
@@ -197,7 +202,7 @@ class Scene5 extends Phaser.Scene {
         text.setText(formatTime(this.initialTime));
         }
         if(this.initialTime <= 0){
-          if (this.point >= 4) {
+          if (this.point >= 8) {
             this.scene.start("troisieme_scene", {compteur_echec: this.compteur_echec, scene_compte: this.scene_compte});
           }
           else{
@@ -209,6 +214,8 @@ class Scene5 extends Phaser.Scene {
         }
 
     }
+
+
 
 
 
@@ -228,6 +235,13 @@ class Scene5 extends Phaser.Scene {
         this.temps = 0;
       });
     }*/
+
+    if (this.initialTime == 6) {
+      this.timer.setTexture("timer_jaune");
+    }
+    else if (this.initialTime == 3) {
+      this.timer.setTexture("timer_rouge");
+    }
 
 
 
