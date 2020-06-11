@@ -10,6 +10,7 @@ class Scene3 extends Phaser.Scene {
 
   init(data){
     this.compteur_echec = data.compteur_echec;
+    this.scene_compte = data.scene_compte;
   }
 
   preload(){
@@ -23,7 +24,6 @@ class Scene3 extends Phaser.Scene {
   create(){
     this.pause_ = 1;
     this.add.image(0,0, "fond").setOrigin(0,0);
-    this.physics.add.image(100,100, "pause");
     this.add.image(641, 339, "coeur");
     this.pause = this.add.image(1211,64, "pause").setInteractive();
     this.pause_2 = this.add.image(1211, 64, "pause_presse").setInteractive();
@@ -38,7 +38,13 @@ class Scene3 extends Phaser.Scene {
     this.timedEvent = this.time.addEvent({ delay: 3000, callback: onEvent, callbackScope: this, repeat: -1 });
     function onEvent(){
       if (this.pause_ == 1) {
-        this.scene.start("quatrieme_scene", {compteur_echec: this.compteur_echec});
+        if (this.scene_compte == 1) {
+          this.scene.start("quatrieme_scene", {compteur_echec: this.compteur_echec});
+        }
+        else if (this.scene_compte == 2) {
+          this.scene.start("cinquieme_scene", {compteur_echec: this.compteur_echec});
+        }
+
       }
     };
 
@@ -46,7 +52,7 @@ class Scene3 extends Phaser.Scene {
   }
 
   update(){
-    console.log(this.pause_);
+
 
 
 

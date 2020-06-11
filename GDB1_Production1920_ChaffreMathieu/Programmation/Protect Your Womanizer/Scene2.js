@@ -32,6 +32,7 @@ class Scene2 extends Phaser.Scene {
   }
 
   create(){
+    this.scene_compte = 1;
     this.fond = this.add.image(0,0, "landscape_parachute").setOrigin(0,0);
 
     this.text = this.add.text(50, 1280, "Pose ton dragueur !", {fontSize: '100px', fill: 'black', fontStyle: "bold"});
@@ -91,7 +92,7 @@ class Scene2 extends Phaser.Scene {
 
             if ((bodyA.label === 'perso' && bodyB.label === 'immeuble') || (bodyB.label === 'immeuble' && bodyA.label === 'perso')) {
               if (this.perso.y < 2415) {
-                this.scene.start("troisieme_scene", {compteur_echec: this.compteur_echec});
+                this.scene.start("troisieme_scene", {compteur_echec: this.compteur_echec, scene_compte: this.scene_compte});
 
               }
             }
@@ -151,7 +152,7 @@ function getRootBody(body) {
       this.perso.y = 4105;
       this.time.delayedCall(2000, ()=> {
         this.compteur_echec -=1;
-        this.scene.start("troisieme_scene", {compteur_echec: this.compteur_echec});
+        this.scene.start("troisieme_scene", {compteur_echec: this.compteur_echec, scene_compte: this.scene_compte});
 
       });
 
