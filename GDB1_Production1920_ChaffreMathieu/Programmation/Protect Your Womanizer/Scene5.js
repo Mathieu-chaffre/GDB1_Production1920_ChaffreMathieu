@@ -155,11 +155,13 @@ class Scene5 extends Phaser.Scene {
         case 1:
         this.perso_2.setVelocityX(-200);
         perso.setVelocityX(200);
+        this.perso_3.setVelocityX(-300);
 
           break;
           case 2:
           perso.setVelocityX(-200);
           this.perso_2.setVelocityX(200);
+          this.perso_3.setVelocityX(300);
           break;
 
     }
@@ -248,9 +250,6 @@ class Scene5 extends Phaser.Scene {
 
   }
 
-  gagnePoint(){
-    this.point +=1;
-  }
 
 
 }
