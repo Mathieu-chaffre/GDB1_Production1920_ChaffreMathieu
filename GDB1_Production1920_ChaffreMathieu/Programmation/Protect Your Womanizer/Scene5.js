@@ -197,12 +197,12 @@ class Scene5 extends Phaser.Scene {
         text.setText(formatTime(this.initialTime));
         }
         if(this.initialTime <= 0){
-          if (this.point >= 4) {
-            this.scene.start("troisieme_scene", {compteur_echec: this.compteur_echec, scene_compte: this.scene_compte});
+          if (this.point >= 8) {
+            this.scene.start("sixieme_scene", {compteur_echec: this.compteur_echec, scene_compte: this.scene_compte});
           }
           else{
             this.compteur_echec -=1;
-            this.scene.start("troisieme_scene", {compteur_echec: this.compteur_echec, scene_compte: this.scene_compte});
+            this.scene.start("sixieme_scene", {compteur_echec: this.compteur_echec, scene_compte: this.scene_compte});
           }
 
 
