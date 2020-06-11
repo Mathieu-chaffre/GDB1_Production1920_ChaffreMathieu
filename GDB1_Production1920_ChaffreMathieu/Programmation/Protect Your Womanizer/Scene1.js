@@ -44,9 +44,10 @@ class Scene1 extends Phaser.Scene {
 
     this.compteur_echec = 3;
     this.score = 0;
+    this.reussis = 0;
 
 
-  this.sound.play('theme');
+  this.sound.play('theme', {volume: 0.2});
 
 
 
