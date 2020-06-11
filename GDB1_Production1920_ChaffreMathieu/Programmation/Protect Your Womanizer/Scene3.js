@@ -11,6 +11,7 @@ class Scene3 extends Phaser.Scene {
   init(data){
     this.compteur_echec = data.compteur_echec;
     this.scene_compte = data.scene_compte;
+    this.score = data.score;
   }
 
   preload(){
@@ -39,10 +40,10 @@ class Scene3 extends Phaser.Scene {
     function onEvent(){
       if (this.pause_ == 1) {
         if (this.scene_compte == 1) {
-          this.scene.start("quatrieme_scene", {compteur_echec: this.compteur_echec});
+          this.scene.start("quatrieme_scene", {compteur_echec: this.compteur_echec, score: this.score});
         }
         else if (this.scene_compte == 2) {
-          this.scene.start("cinquieme_scene", {compteur_echec: this.compteur_echec});
+          this.scene.start("cinquieme_scene", {compteur_echec: this.compteur_echec, score: this.score});
         }
 
       }

@@ -43,6 +43,7 @@ class Scene1 extends Phaser.Scene {
     this.button.on("pointerdown", this.Click, this);
 
     this.compteur_echec = 3;
+    this.score = 0;
 
 
   this.sound.play('theme');
