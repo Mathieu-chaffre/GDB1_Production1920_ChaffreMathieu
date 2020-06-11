@@ -1,0 +1,661 @@
+{
+	"textures": [
+		{
+			"image": "dance_perso_3-0.png",
+			"format": "RGBA8888",
+			"size": {
+				"w": 2037,
+				"h": 1765
+			},
+			"scale": 1,
+			"frames": [
+				{
+					"filename": "dance_perso_30010.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 432,
+						"h": 440
+					},
+					"spriteSourceSize": {
+						"x": 41,
+						"y": 0,
+						"w": 338,
+						"h": 440
+					},
+					"frame": {
+						"x": 1,
+						"y": 1,
+						"w": 338,
+						"h": 440
+					}
+				},
+				{
+					"filename": "dance_perso_30021.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 432,
+						"h": 440
+					},
+					"spriteSourceSize": {
+						"x": 37,
+						"y": 1,
+						"w": 347,
+						"h": 439
+					},
+					"frame": {
+						"x": 1,
+						"y": 443,
+						"w": 347,
+						"h": 439
+					}
+				},
+				{
+					"filename": "dance_perso_30009.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 432,
+						"h": 440
+					},
+					"spriteSourceSize": {
+						"x": 54,
+						"y": 1,
+						"w": 333,
+						"h": 439
+					},
+					"frame": {
+						"x": 341,
+						"y": 1,
+						"w": 333,
+						"h": 439
+					}
+				},
+				{
+					"filename": "dance_perso_30008.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 432,
+						"h": 440
+					},
+					"spriteSourceSize": {
+						"x": 68,
+						"y": 1,
+						"w": 321,
+						"h": 439
+					},
+					"frame": {
+						"x": 1,
+						"y": 884,
+						"w": 321,
+						"h": 439
+					}
+				},
+				{
+					"filename": "dance_perso_30020.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 432,
+						"h": 440
+					},
+					"spriteSourceSize": {
+						"x": 55,
+						"y": 1,
+						"w": 312,
+						"h": 439
+					},
+					"frame": {
+						"x": 1,
+						"y": 1325,
+						"w": 312,
+						"h": 439
+					}
+				},
+				{
+					"filename": "dance_perso_30007.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 432,
+						"h": 440
+					},
+					"spriteSourceSize": {
+						"x": 81,
+						"y": 1,
+						"w": 304,
+						"h": 439
+					},
+					"frame": {
+						"x": 315,
+						"y": 1325,
+						"w": 304,
+						"h": 439
+					}
+				},
+				{
+					"filename": "dance_perso_30005.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 432,
+						"h": 440
+					},
+					"spriteSourceSize": {
+						"x": 104,
+						"y": 1,
+						"w": 300,
+						"h": 439
+					},
+					"frame": {
+						"x": 324,
+						"y": 884,
+						"w": 300,
+						"h": 439
+					}
+				},
+				{
+					"filename": "dance_perso_30004.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 432,
+						"h": 440
+					},
+					"spriteSourceSize": {
+						"x": 116,
+						"y": 1,
+						"w": 293,
+						"h": 439
+					},
+					"frame": {
+						"x": 350,
+						"y": 442,
+						"w": 293,
+						"h": 439
+					}
+				},
+				{
+					"filename": "dance_perso_30006.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 432,
+						"h": 440
+					},
+					"spriteSourceSize": {
+						"x": 94,
+						"y": 1,
+						"w": 280,
+						"h": 439
+					},
+					"frame": {
+						"x": 621,
+						"y": 1325,
+						"w": 280,
+						"h": 439
+					}
+				},
+				{
+					"filename": "dance_perso_30028.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 432,
+						"h": 440
+					},
+					"spriteSourceSize": {
+						"x": 64,
+						"y": 1,
+						"w": 277,
+						"h": 439
+					},
+					"frame": {
+						"x": 626,
+						"y": 883,
+						"w": 277,
+						"h": 439
+					}
+				},
+				{
+					"filename": "dance_perso_30003.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 432,
+						"h": 440
+					},
+					"spriteSourceSize": {
+						"x": 129,
+						"y": 1,
+						"w": 258,
+						"h": 439
+					},
+					"frame": {
+						"x": 645,
+						"y": 442,
+						"w": 258,
+						"h": 439
+					}
+				},
+				{
+					"filename": "dance_perso_30029.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 432,
+						"h": 440
+					},
+					"spriteSourceSize": {
+						"x": 110,
+						"y": 1,
+						"w": 206,
+						"h": 439
+					},
+					"frame": {
+						"x": 676,
+						"y": 1,
+						"w": 206,
+						"h": 439
+					}
+				},
+				{
+					"filename": "dance_perso_30002.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 432,
+						"h": 440
+					},
+					"spriteSourceSize": {
+						"x": 144,
+						"y": 1,
+						"w": 198,
+						"h": 439
+					},
+					"frame": {
+						"x": 884,
+						"y": 1,
+						"w": 198,
+						"h": 439
+					}
+				},
+				{
+					"filename": "dance_perso_30030.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 432,
+						"h": 440
+					},
+					"spriteSourceSize": {
+						"x": 158,
+						"y": 1,
+						"w": 134,
+						"h": 439
+					},
+					"frame": {
+						"x": 903,
+						"y": 1324,
+						"w": 134,
+						"h": 439
+					}
+				},
+				{
+					"filename": "dance_perso_30024.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 432,
+						"h": 440
+					},
+					"spriteSourceSize": {
+						"x": 15,
+						"y": 1,
+						"w": 407,
+						"h": 438
+					},
+					"frame": {
+						"x": 905,
+						"y": 442,
+						"w": 407,
+						"h": 438
+					}
+				},
+				{
+					"filename": "dance_perso_30025.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 432,
+						"h": 440
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 1,
+						"w": 406,
+						"h": 438
+					},
+					"frame": {
+						"x": 1084,
+						"y": 1,
+						"w": 406,
+						"h": 438
+					}
+				},
+				{
+					"filename": "dance_perso_30023.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 432,
+						"h": 440
+					},
+					"spriteSourceSize": {
+						"x": 16,
+						"y": 1,
+						"w": 396,
+						"h": 438
+					},
+					"frame": {
+						"x": 905,
+						"y": 882,
+						"w": 396,
+						"h": 438
+					}
+				},
+				{
+					"filename": "dance_perso_30026.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 432,
+						"h": 440
+					},
+					"spriteSourceSize": {
+						"x": 2,
+						"y": 1,
+						"w": 383,
+						"h": 438
+					},
+					"frame": {
+						"x": 1492,
+						"y": 1,
+						"w": 383,
+						"h": 438
+					}
+				},
+				{
+					"filename": "dance_perso_30001.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 432,
+						"h": 440
+					},
+					"spriteSourceSize": {
+						"x": 156,
+						"y": 1,
+						"w": 134,
+						"h": 438
+					},
+					"frame": {
+						"x": 1877,
+						"y": 1,
+						"w": 134,
+						"h": 438
+					}
+				},
+				{
+					"filename": "dance_perso_30022.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 432,
+						"h": 440
+					},
+					"spriteSourceSize": {
+						"x": 24,
+						"y": 1,
+						"w": 374,
+						"h": 438
+					},
+					"frame": {
+						"x": 1039,
+						"y": 1322,
+						"w": 374,
+						"h": 438
+					}
+				},
+				{
+					"filename": "dance_perso_30027.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 432,
+						"h": 440
+					},
+					"spriteSourceSize": {
+						"x": 25,
+						"y": 1,
+						"w": 338,
+						"h": 438
+					},
+					"frame": {
+						"x": 1303,
+						"y": 882,
+						"w": 338,
+						"h": 438
+					}
+				},
+				{
+					"filename": "dance_perso_30011.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 432,
+						"h": 440
+					},
+					"spriteSourceSize": {
+						"x": 55,
+						"y": 3,
+						"w": 359,
+						"h": 435
+					},
+					"frame": {
+						"x": 1314,
+						"y": 441,
+						"w": 359,
+						"h": 435
+					}
+				},
+				{
+					"filename": "dance_perso_30012.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 432,
+						"h": 440
+					},
+					"spriteSourceSize": {
+						"x": 71,
+						"y": 5,
+						"w": 361,
+						"h": 431
+					},
+					"frame": {
+						"x": 1675,
+						"y": 441,
+						"w": 361,
+						"h": 431
+					}
+				},
+				{
+					"filename": "dance_perso_30013.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 432,
+						"h": 440
+					},
+					"spriteSourceSize": {
+						"x": 88,
+						"y": 7,
+						"w": 344,
+						"h": 428
+					},
+					"frame": {
+						"x": 1675,
+						"y": 874,
+						"w": 344,
+						"h": 428
+					}
+				},
+				{
+					"filename": "dance_perso_30019.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 432,
+						"h": 440
+					},
+					"spriteSourceSize": {
+						"x": 24,
+						"y": 6,
+						"w": 329,
+						"h": 433
+					},
+					"frame": {
+						"x": 1643,
+						"y": 1304,
+						"w": 329,
+						"h": 433
+					}
+				},
+				{
+					"filename": "dance_perso_30016.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 432,
+						"h": 440
+					},
+					"spriteSourceSize": {
+						"x": 142,
+						"y": 12,
+						"w": 196,
+						"h": 428
+					},
+					"frame": {
+						"x": 1415,
+						"y": 1322,
+						"w": 196,
+						"h": 428
+					}
+				}
+			]
+		},
+		{
+			"image": "dance_perso_3-1.png",
+			"format": "RGBA8888",
+			"size": {
+				"w": 1009,
+				"h": 432
+			},
+			"scale": 1,
+			"frames": [
+				{
+					"filename": "dance_perso_30014.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 432,
+						"h": 440
+					},
+					"spriteSourceSize": {
+						"x": 105,
+						"y": 9,
+						"w": 310,
+						"h": 430
+					},
+					"frame": {
+						"x": 1,
+						"y": 1,
+						"w": 310,
+						"h": 430
+					}
+				},
+				{
+					"filename": "dance_perso_30015.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 432,
+						"h": 440
+					},
+					"spriteSourceSize": {
+						"x": 123,
+						"y": 10,
+						"w": 257,
+						"h": 430
+					},
+					"frame": {
+						"x": 313,
+						"y": 1,
+						"w": 257,
+						"h": 430
+					}
+				},
+				{
+					"filename": "dance_perso_30018.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 432,
+						"h": 440
+					},
+					"spriteSourceSize": {
+						"x": 68,
+						"y": 10,
+						"w": 258,
+						"h": 429
+					},
+					"frame": {
+						"x": 572,
+						"y": 1,
+						"w": 258,
+						"h": 429
+					}
+				},
+				{
+					"filename": "dance_perso_30017.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 432,
+						"h": 440
+					},
+					"spriteSourceSize": {
+						"x": 157,
+						"y": 14,
+						"w": 176,
+						"h": 425
+					},
+					"frame": {
+						"x": 832,
+						"y": 1,
+						"w": 176,
+						"h": 425
+					}
+				}
+			]
+		}
+	],
+	"meta": {
+		"app": "https://www.codeandweb.com/texturepacker",
+		"version": "3.0",
+		"smartupdate": "$TexturePacker:SmartUpdate:a54ea14acc6fe6daa9e7097763de39a2:37d3b6676de0a1068d8ca25b155526f6:b3564221e8e50f384754076d480edcd0$"
+	}
+}

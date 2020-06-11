@@ -21,6 +21,7 @@ class Scene4 extends Phaser.Scene {
   }
 
   create(){
+    this.scene_compte = 2;
     this.anime = 0;
     this.bouton_toucher = 0;
     this.rand_number = 0;
@@ -70,7 +71,7 @@ class Scene4 extends Phaser.Scene {
             text.setText(formatTime(this.initialTime));
             }
             if(this.initialTime <= 0){
-              this.scene.start("troisieme_scene", {compteur_echec: this.compteur_echec});
+              this.scene.start("troisieme_scene", {compteur_echec: this.compteur_echec, scene_compte: this.scene_compte});
 
             }
 
@@ -132,7 +133,7 @@ class Scene4 extends Phaser.Scene {
           if (this.bouton_toucher == 0) {
 
             this.compteur_echec -=1;
-            this.scene.start("troisieme_scene", {compteur_echec: this.compteur_echec});
+            this.scene.start("troisieme_scene", {compteur_echec: this.compteur_echec, scene_compte: this.scene_compte});
 
 
           }
