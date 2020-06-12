@@ -21,11 +21,13 @@ class Scene3 extends Phaser.Scene {
     this.load.image("pause", "assets/bouton_pause.png");
     this.load.image("pause_presse", "assets/bouton_pause_press.png");
     this.load.audio('applause', "assets/applause.ogg");
+    this.load.audio('boo', "assets/boo.ogg");
 
   }
 
   create(){
     this.sound.add('applause');
+    this.sound.add('boo');
 
     this.pause_ = 1;
     this.add.image(0,0, "fond").setOrigin(0,0);
@@ -67,6 +69,9 @@ class Scene3 extends Phaser.Scene {
     console.log(this.reussis)
     if (this.reussis == 1) {
       this.sound.play('applause', {volume: 1});
+    }
+    else {
+      this.sound.play("boo", {volume: 0.8});
     }
 
 

@@ -100,8 +100,6 @@ class Scene5 extends Phaser.Scene {
         if (pointer.x <= perso.x+150 && pointer.x >= perso.x-150 ) {
           if (pointer.y <= perso.y+150 && pointer.y >= perso.y-150 ) {
             toucher = 1;
-            console.log(toucher);
-
           }
         }
         else{
