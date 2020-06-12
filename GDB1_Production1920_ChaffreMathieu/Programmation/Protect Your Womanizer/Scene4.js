@@ -25,7 +25,7 @@ class Scene4 extends Phaser.Scene {
     this.scene_compte = 2;
 
 
-    this.bouton_toucher = 0;
+
     this.rand_number = 0;
     this.add.image(0,0, "landscape_skate").setOrigin(0,0);
     this.text = this.add.text(150, 475, "Réalise des tricks ! ", {fontSize: '75px', fill: 'white', fontStyle: "bold"});
@@ -36,9 +36,20 @@ class Scene4 extends Phaser.Scene {
       this.cameras.main.startFollow(this.perso, true);
       this.matter.world.setBounds(0, 0,5120, 680);
       this.perso.setFlipX(true);
-      this.bouton_tricks = this.add.image(120, 200, "bouton_tricks").setInteractive();
+
+      function Bouton(scene, x, y, texture){
+        Phaser.Physics.Arcade.Image.call(this, scene, x, y, texture);
+        scene.add.existing(this);
+        this.setInteractive();
+        this.toucher = 0;
+      };
+
+      Bouton.prototype = Object.create(Phaser.Physics.Arcade.Image.prototype);
+    Bouton.prototype.constructor = Bouton;
+
+      this.bouton_tricks = new Bouton(this, 120, 200, "bouton_tricks");
       this.bouton_tricks.visible = false;
-      this.bouton_touche = 0;
+
 
 
 
@@ -133,9 +144,9 @@ class Scene4 extends Phaser.Scene {
         console.log(this.perso.x);
 
         this.time.delayedCall(800, ()=> {
-          console.log(this.bouton_toucher);
+          console.log(this.bouton_tricks.toucher);
           this.bouton_tricks.visible = false;
-          if (this.bouton_toucher == 0) {
+          if (this.bouton_tricks.toucher == 0) {
 
             this.compteur_echec -=1;
             this.reussis = 0;
@@ -172,7 +183,7 @@ class Scene4 extends Phaser.Scene {
   HitBouton(){
 
     this.rand_number = Phaser.Math.Between(1,2);
-    this.bouton_toucher = 1;
+    this.bouton_tricks.toucher = 1;
     if (this.rand_number == 1) {
       this.perso.anims.play("skate_tricks");
 
@@ -191,7 +202,7 @@ class Scene4 extends Phaser.Scene {
     }
 
     this.time.delayedCall(800, ()=> {
-      this.bouton_toucher = 0;
+      this.bouton_tricks.toucher = 0;
 
     });
 

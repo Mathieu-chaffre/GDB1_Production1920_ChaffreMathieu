@@ -30,19 +30,30 @@ class Scene3 extends Phaser.Scene {
     this.pause_ = 1;
     this.add.image(0,0, "fond").setOrigin(0,0);
     this.add.image(641, 339, "coeur");
-    this.pause = this.add.image(1211,64, "pause").setInteractive();
-    this.pause_2 = this.add.image(1211, 64, "pause_presse").setInteractive();
-    this.pause_2.visible = false;
+
+    function Bouton(scene, x, y, texture){
+      Phaser.Physics.Arcade.Image.call(this, scene, x, y, texture);
+      scene.add.existing(this);
+      this.setInteractive();
+      this.test= 1;
+    };
+
+    Bouton.prototype = Object.create(Phaser.Physics.Arcade.Image.prototype);
+  Bouton.prototype.constructor = Bouton;
+    this.bouton_pause = new Bouton(this,1211,64,"pause");
+
+    this.bouton_pause.on("pointerdown", this.Pause, this);
+
+
+
+
+
     this.text = this.add.text(410, 480, "x"+ this.compteur_echec, {fontSize: '100px', fill: 'white', fontStyle: "bold"});
 
 
-
-    this.pause.on("pointerdown", this.Pause, this);
-    this.pause_2.on("pointerdown", this.Unpause, this);
-
     this.timedEvent = this.time.addEvent({ delay: 4000, callback: onEvent, callbackScope: this, repeat: -1 });
     function onEvent(){
-      if (this.pause_ == 1) {
+      if (this.bouton_pause.test == 1) {
         if (this.scene_compte == 1) {
           this.scene.start("quatrieme_scene", {compteur_echec: this.compteur_echec, score: this.score});
         }
@@ -69,18 +80,18 @@ class Scene3 extends Phaser.Scene {
   }
 
   Pause(){
-    this.pause_ = 0;
-    this.physics.pause();
-    console.log("pause");
-    this.pause_2.visible = true;
-    this.pause.visible = false;
+    if (this.bouton_pause.test == 1) {
+      this.physics.pause();
+      this.bouton_pause.test = 0;
+      this.bouton_pause.setTexture("pause_presse");
+    }
+    else if (this.bouton_pause.test == 0) {
+        this.physics.resume();
+        this.bouton_pause.test = 1;
+        this.bouton_pause.setTexture("pause");
+    }
   }
 
-  Unpause(){
-    this.pause_ = 1;
-    this.physics.resume(true);
-    this.pause_2.visible = false;
-    this.pause.visible = true;
-  }
+
 
 }
