@@ -22,6 +22,7 @@ class Scene5 extends Phaser.Scene {
   }
 
   create(){
+    this.scene_compte = 3;
 
     this.text_indication = this.add.text(50,100, "Eclaire ton\n dragueur !", {fontSize: '75px', fill: 'white', fontStyle: "bold"});
     this.time.delayedCall(2000, ()=> {
@@ -203,11 +204,13 @@ class Scene5 extends Phaser.Scene {
         if(this.initialTime <= 0){
           if (this.point >= 8) {
             this.score +=10;
-            this.scene.start("sixieme_scene", {compteur_echec: this.compteur_echec, scene_compte: this.scene_compte, score: this.score});
+            this.reussis = 1;
+            this.scene.start("troisieme_scene", {compteur_echec: this.compteur_echec, scene_compte: this.scene_compte, score : this.score, reussis: this.reussis});
           }
           else{
             this.compteur_echec -=1;
-            this.scene.start("sixieme_scene", {compteur_echec: this.compteur_echec, scene_compte: this.scene_compte, score:this.score});
+            this.reussis = 0;
+            this.scene.start("troisieme_scene", {compteur_echec: this.compteur_echec, scene_compte: this.scene_compte, score : this.score, reussis: this.reussis});
           }
 
 

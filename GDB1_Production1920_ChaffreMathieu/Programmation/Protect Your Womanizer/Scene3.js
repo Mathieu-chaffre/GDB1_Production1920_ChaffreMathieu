@@ -31,7 +31,7 @@ class Scene3 extends Phaser.Scene {
 
     this.pause_ = 1;
     this.add.image(0,0, "fond").setOrigin(0,0);
-    this.add.image(641, 339, "coeur");
+    this.coeur = this.add.image(641, 339, "coeur");
 
     function Bouton(scene, x, y, texture){
       Phaser.Physics.Arcade.Image.call(this, scene, x, y, texture);
@@ -55,13 +55,29 @@ class Scene3 extends Phaser.Scene {
 
     this.timedEvent = this.time.addEvent({ delay: 4000, callback: onEvent, callbackScope: this, repeat: -1 });
     function onEvent(){
-      if (this.bouton_pause.pause == 1) {
+      if (this.bouton_pause.pause == 1 && this.compteur_echec > 0) {
         if (this.scene_compte == 1) {
           this.scene.start("quatrieme_scene", {compteur_echec: this.compteur_echec, score: this.score});
         }
-        else if (this.scene_compte == 2) {
+        else if (this.scene_compte == 2 && this.compteur_echec > 0) {
           this.scene.start("cinquieme_scene", {compteur_echec: this.compteur_echec, score: this.score});
         }
+        else if (this.scene_compte == 3 && this.compteur_echec > 0) {
+          this.time.delayedCall(1000, ()=> {
+            this.coeur.destroy(true);
+             this.text.setText("Boss stage: Réutilise ce que tu as appris !");
+             this.text.x = 180;
+             this.text.y = 345;
+             this.text.setFontSize("40px");
+             this.time.delayedCall(2000, ()=> {
+               this.scene.start("septieme_scene", {compteur_echec: this.compteur_echec, score: this.score});
+             });
+          });
+
+
+
+        }
+
 
       }
     };
@@ -78,6 +94,13 @@ class Scene3 extends Phaser.Scene {
   }
 
   update(){
+    if (this.compteur_echec <= 0) {
+      this.text.setText("Game over");
+      this.text.y = 300;
+      this.text.x = 375;
+      this.coeur.destroy(true);
+      this.bouton_pause.destroy(true);
+    }
 
 
 

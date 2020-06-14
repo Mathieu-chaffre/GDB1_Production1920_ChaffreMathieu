@@ -1,0 +1,650 @@
+{
+	"textures": [
+		{
+			"image": "boxe_stand.png",
+			"format": "RGBA8888",
+			"size": {
+				"w": 1650,
+				"h": 1885
+			},
+			"scale": 1,
+			"frames": [
+				{
+					"filename": "boxe_stand_0015.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 273,
+						"h": 389
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 37,
+						"w": 273,
+						"h": 352
+					},
+					"frame": {
+						"x": 1,
+						"y": 1,
+						"w": 273,
+						"h": 352
+					}
+				},
+				{
+					"filename": "boxe_stand_0014.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 273,
+						"h": 389
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 34,
+						"w": 273,
+						"h": 355
+					},
+					"frame": {
+						"x": 276,
+						"y": 1,
+						"w": 273,
+						"h": 355
+					}
+				},
+				{
+					"filename": "boxe_stand_0016.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 273,
+						"h": 389
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 34,
+						"w": 273,
+						"h": 355
+					},
+					"frame": {
+						"x": 551,
+						"y": 1,
+						"w": 273,
+						"h": 355
+					}
+				},
+				{
+					"filename": "boxe_stand_0013.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 273,
+						"h": 389
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 31,
+						"w": 273,
+						"h": 358
+					},
+					"frame": {
+						"x": 826,
+						"y": 1,
+						"w": 273,
+						"h": 358
+					}
+				},
+				{
+					"filename": "boxe_stand_0017.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 273,
+						"h": 389
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 31,
+						"w": 273,
+						"h": 358
+					},
+					"frame": {
+						"x": 1101,
+						"y": 1,
+						"w": 273,
+						"h": 358
+					}
+				},
+				{
+					"filename": "boxe_stand_0018.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 273,
+						"h": 389
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 29,
+						"w": 273,
+						"h": 360
+					},
+					"frame": {
+						"x": 1376,
+						"y": 1,
+						"w": 273,
+						"h": 360
+					}
+				},
+				{
+					"filename": "boxe_stand_0012.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 273,
+						"h": 389
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 28,
+						"w": 273,
+						"h": 361
+					},
+					"frame": {
+						"x": 1,
+						"y": 355,
+						"w": 273,
+						"h": 361
+					}
+				},
+				{
+					"filename": "boxe_stand_0011.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 273,
+						"h": 389
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 26,
+						"w": 273,
+						"h": 363
+					},
+					"frame": {
+						"x": 276,
+						"y": 358,
+						"w": 273,
+						"h": 363
+					}
+				},
+				{
+					"filename": "boxe_stand_0019.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 273,
+						"h": 389
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 26,
+						"w": 273,
+						"h": 363
+					},
+					"frame": {
+						"x": 551,
+						"y": 358,
+						"w": 273,
+						"h": 363
+					}
+				},
+				{
+					"filename": "boxe_stand_0020.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 273,
+						"h": 389
+					},
+					"spriteSourceSize": {
+						"x": 1,
+						"y": 24,
+						"w": 272,
+						"h": 365
+					},
+					"frame": {
+						"x": 826,
+						"y": 361,
+						"w": 272,
+						"h": 365
+					}
+				},
+				{
+					"filename": "boxe_stand_0010.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 273,
+						"h": 389
+					},
+					"spriteSourceSize": {
+						"x": 1,
+						"y": 23,
+						"w": 272,
+						"h": 366
+					},
+					"frame": {
+						"x": 1100,
+						"y": 361,
+						"w": 272,
+						"h": 366
+					}
+				},
+				{
+					"filename": "boxe_stand_0021.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 273,
+						"h": 389
+					},
+					"spriteSourceSize": {
+						"x": 2,
+						"y": 21,
+						"w": 271,
+						"h": 368
+					},
+					"frame": {
+						"x": 1374,
+						"y": 363,
+						"w": 271,
+						"h": 368
+					}
+				},
+				{
+					"filename": "boxe_stand_009.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 273,
+						"h": 389
+					},
+					"spriteSourceSize": {
+						"x": 2,
+						"y": 20,
+						"w": 271,
+						"h": 369
+					},
+					"frame": {
+						"x": 1,
+						"y": 718,
+						"w": 271,
+						"h": 369
+					}
+				},
+				{
+					"filename": "boxe_stand_0022.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 273,
+						"h": 389
+					},
+					"spriteSourceSize": {
+						"x": 3,
+						"y": 19,
+						"w": 270,
+						"h": 370
+					},
+					"frame": {
+						"x": 274,
+						"y": 723,
+						"w": 270,
+						"h": 370
+					}
+				},
+				{
+					"filename": "boxe_stand_008.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 273,
+						"h": 389
+					},
+					"spriteSourceSize": {
+						"x": 4,
+						"y": 18,
+						"w": 269,
+						"h": 371
+					},
+					"frame": {
+						"x": 546,
+						"y": 723,
+						"w": 269,
+						"h": 371
+					}
+				},
+				{
+					"filename": "boxe_stand_0023.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 273,
+						"h": 389
+					},
+					"spriteSourceSize": {
+						"x": 4,
+						"y": 16,
+						"w": 269,
+						"h": 373
+					},
+					"frame": {
+						"x": 817,
+						"y": 728,
+						"w": 269,
+						"h": 373
+					}
+				},
+				{
+					"filename": "boxe_stand_007.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 273,
+						"h": 389
+					},
+					"spriteSourceSize": {
+						"x": 5,
+						"y": 15,
+						"w": 268,
+						"h": 374
+					},
+					"frame": {
+						"x": 1088,
+						"y": 729,
+						"w": 268,
+						"h": 374
+					}
+				},
+				{
+					"filename": "boxe_stand_0024.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 273,
+						"h": 389
+					},
+					"spriteSourceSize": {
+						"x": 6,
+						"y": 14,
+						"w": 267,
+						"h": 375
+					},
+					"frame": {
+						"x": 1358,
+						"y": 733,
+						"w": 267,
+						"h": 375
+					}
+				},
+				{
+					"filename": "boxe_stand_006.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 273,
+						"h": 389
+					},
+					"spriteSourceSize": {
+						"x": 7,
+						"y": 12,
+						"w": 266,
+						"h": 377
+					},
+					"frame": {
+						"x": 1,
+						"y": 1089,
+						"w": 266,
+						"h": 377
+					}
+				},
+				{
+					"filename": "boxe_stand_0025.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 273,
+						"h": 389
+					},
+					"spriteSourceSize": {
+						"x": 8,
+						"y": 11,
+						"w": 265,
+						"h": 378
+					},
+					"frame": {
+						"x": 269,
+						"y": 1095,
+						"w": 265,
+						"h": 378
+					}
+				},
+				{
+					"filename": "boxe_stand_0026.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 273,
+						"h": 389
+					},
+					"spriteSourceSize": {
+						"x": 9,
+						"y": 9,
+						"w": 264,
+						"h": 380
+					},
+					"frame": {
+						"x": 536,
+						"y": 1096,
+						"w": 264,
+						"h": 380
+					}
+				},
+				{
+					"filename": "boxe_stand_005.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 273,
+						"h": 389
+					},
+					"spriteSourceSize": {
+						"x": 9,
+						"y": 9,
+						"w": 264,
+						"h": 380
+					},
+					"frame": {
+						"x": 802,
+						"y": 1103,
+						"w": 264,
+						"h": 380
+					}
+				},
+				{
+					"filename": "boxe_stand_004.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 273,
+						"h": 389
+					},
+					"spriteSourceSize": {
+						"x": 11,
+						"y": 7,
+						"w": 262,
+						"h": 382
+					},
+					"frame": {
+						"x": 1068,
+						"y": 1105,
+						"w": 262,
+						"h": 382
+					}
+				},
+				{
+					"filename": "boxe_stand_0027.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 273,
+						"h": 389
+					},
+					"spriteSourceSize": {
+						"x": 12,
+						"y": 6,
+						"w": 261,
+						"h": 383
+					},
+					"frame": {
+						"x": 1332,
+						"y": 1110,
+						"w": 261,
+						"h": 383
+					}
+				},
+				{
+					"filename": "boxe_stand_0028.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 273,
+						"h": 389
+					},
+					"spriteSourceSize": {
+						"x": 14,
+						"y": 4,
+						"w": 259,
+						"h": 385
+					},
+					"frame": {
+						"x": 1,
+						"y": 1468,
+						"w": 259,
+						"h": 385
+					}
+				},
+				{
+					"filename": "boxe_stand_003.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 273,
+						"h": 389
+					},
+					"spriteSourceSize": {
+						"x": 14,
+						"y": 4,
+						"w": 259,
+						"h": 385
+					},
+					"frame": {
+						"x": 262,
+						"y": 1475,
+						"w": 259,
+						"h": 385
+					}
+				},
+				{
+					"filename": "boxe_stand_002.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 273,
+						"h": 389
+					},
+					"spriteSourceSize": {
+						"x": 16,
+						"y": 1,
+						"w": 257,
+						"h": 388
+					},
+					"frame": {
+						"x": 523,
+						"y": 1478,
+						"w": 257,
+						"h": 388
+					}
+				},
+				{
+					"filename": "boxe_stand_0029.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 273,
+						"h": 389
+					},
+					"spriteSourceSize": {
+						"x": 17,
+						"y": 1,
+						"w": 256,
+						"h": 388
+					},
+					"frame": {
+						"x": 782,
+						"y": 1485,
+						"w": 256,
+						"h": 388
+					}
+				},
+				{
+					"filename": "boxe_stand_001.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 273,
+						"h": 389
+					},
+					"spriteSourceSize": {
+						"x": 22,
+						"y": 0,
+						"w": 251,
+						"h": 389
+					},
+					"frame": {
+						"x": 1040,
+						"y": 1489,
+						"w": 251,
+						"h": 389
+					}
+				},
+				{
+					"filename": "boxe_stand_0030.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 273,
+						"h": 389
+					},
+					"spriteSourceSize": {
+						"x": 19,
+						"y": 0,
+						"w": 254,
+						"h": 389
+					},
+					"frame": {
+						"x": 1293,
+						"y": 1495,
+						"w": 254,
+						"h": 389
+					}
+				}
+			]
+		}
+	],
+	"meta": {
+		"app": "https://www.codeandweb.com/texturepacker",
+		"version": "3.0",
+		"smartupdate": "$TexturePacker:SmartUpdate:b2b3da2ce2b77dcfc10f52c88de88ca9:48756c206735c8a3a73b8a3ce2988f6e:fddc86ae66c350345a4c20f24e08b223$"
+	}
+}
