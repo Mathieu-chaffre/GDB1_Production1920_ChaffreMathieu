@@ -37,7 +37,7 @@ class Scene3 extends Phaser.Scene {
       Phaser.Physics.Arcade.Image.call(this, scene, x, y, texture);
       scene.add.existing(this);
       this.setInteractive();
-      this.test= 1;
+      this.pause= 1;
     };
 
     Bouton.prototype = Object.create(Phaser.Physics.Arcade.Image.prototype);
@@ -55,7 +55,7 @@ class Scene3 extends Phaser.Scene {
 
     this.timedEvent = this.time.addEvent({ delay: 4000, callback: onEvent, callbackScope: this, repeat: -1 });
     function onEvent(){
-      if (this.bouton_pause.test == 1) {
+      if (this.bouton_pause.pause == 1) {
         if (this.scene_compte == 1) {
           this.scene.start("quatrieme_scene", {compteur_echec: this.compteur_echec, score: this.score});
         }
@@ -85,14 +85,14 @@ class Scene3 extends Phaser.Scene {
   }
 
   Pause(){
-    if (this.bouton_pause.test == 1) {
+    if (this.bouton_pause.pause == 1) {
       this.physics.pause();
-      this.bouton_pause.test = 0;
+      this.bouton_pause.pause = 0;
       this.bouton_pause.setTexture("pause_presse");
     }
-    else if (this.bouton_pause.test == 0) {
+    else if (this.bouton_pause.pause == 0) {
         this.physics.resume();
-        this.bouton_pause.test = 1;
+        this.bouton_pause.pause = 1;
         this.bouton_pause.setTexture("pause");
     }
   }
