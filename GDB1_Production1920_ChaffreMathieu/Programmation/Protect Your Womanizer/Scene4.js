@@ -47,7 +47,7 @@ class Scene4 extends Phaser.Scene {
       Bouton.prototype = Object.create(Phaser.Physics.Arcade.Image.prototype);
     Bouton.prototype.constructor = Bouton;
 
-      this.bouton_tricks = new Bouton(this, 120, 200, "bouton_tricks");
+      this.bouton_tricks = new Bouton(this, 120, 200, "bouton_tricks").setScrollFactor(0);
       this.bouton_tricks.visible = false;
 
 
@@ -135,8 +135,8 @@ class Scene4 extends Phaser.Scene {
       function onEvent(){
 
         console.log("fait visible");
-        this.rand_x = Phaser.Math.Between(this.perso.x-150, this.perso.x+600);
-        this.rand_y = Phaser.Math.Between(this.perso.y-450, this.perso.y);
+        this.rand_x = Phaser.Math.Between(50, 1200);
+        this.rand_y = Phaser.Math.Between(50, 680);
         this.bouton_tricks.setPosition(this.rand_x, this.rand_y);
         this.bouton_tricks.visible = true;
         console.log(this.bouton_tricks.y);
