@@ -34,7 +34,6 @@ class Scene5 extends Phaser.Scene {
     this.point = 0;
     this.temps = 0;
 
-    this.physics.world.setBounds(0, 0, 1280, 720);
 
     this.landscape = this.add.image(0,0, "landscape_dance").setOrigin(0,0);
     this.monde = this.physics.world.setBounds(0, 0,1280, 720);
