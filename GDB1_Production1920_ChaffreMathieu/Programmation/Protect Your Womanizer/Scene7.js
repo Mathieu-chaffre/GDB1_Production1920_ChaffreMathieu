@@ -172,7 +172,7 @@ class Scene7 extends Phaser.Scene {
           }
       }
 
-      this.text = this.add.text(200, 250, "Détruit le punching-ball ! ", {fontSize: '50px', fill: 'white', fontStyle: "bold"} );
+      this.text = this.add.text(200, 250, "Détrui le punching-ball ! ", {fontSize: '50px', fill: 'white', fontStyle: "bold"} );
       this.time.delayedCall(2000, ()=> {
         this.text.visible = false;
       });
