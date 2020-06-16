@@ -142,7 +142,7 @@ class Scene7 extends Phaser.Scene {
     var text;
     var timedEvent;
 
-      this.initialTime = 5;
+      this.initialTime = 10;
       this.timer = this.add.image(55,45, "timer_vert").setScrollFactor(0);
 
 
@@ -225,7 +225,7 @@ else if (this.initialTime == 2) {
       }
     }
     if (this.punching_ball.coups == 5) {
-      this.score += 10;
+      this.score += 10*this.initialTime;
       this.punching_ball.setFlipX(false);
       this.punching_ball.anims.play("boom");
       this.time.delayedCall(1000, ()=> {
