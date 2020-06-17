@@ -36,7 +36,7 @@ class Scene2 extends Phaser.Scene {
     this.scene_compte = 1;
     this.fond = this.add.image(0,0, "landscape_parachute").setOrigin(0,0);
 
-    this.text = this.add.text(50, 1280, "Pose ton dragueur !", {fontSize: '100px', fill: 'black', fontStyle: "bold"});
+    this.text = this.add.text(50, 1280, "Ramène ton dragueur sur la Terre Ferme!", {fontSize: '50px', fill: 'black', fontStyle: "bold"});
 
 
 

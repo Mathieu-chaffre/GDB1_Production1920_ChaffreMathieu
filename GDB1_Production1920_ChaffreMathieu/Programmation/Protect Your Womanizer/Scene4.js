@@ -143,7 +143,7 @@ class Scene4 extends Phaser.Scene {
         console.log(this.bouton_tricks.x);
         console.log(this.perso.x);
 
-        this.time.delayedCall(800, ()=> {
+        this.time.delayedCall(900, ()=> {
           console.log(this.bouton_tricks.toucher);
           this.bouton_tricks.visible = false;
           if (this.bouton_tricks.toucher == 0) {
@@ -201,7 +201,7 @@ class Scene4 extends Phaser.Scene {
       });
     }
 
-    this.time.delayedCall(800, ()=> {
+    this.time.delayedCall(900, ()=> {
       this.bouton_tricks.toucher = 0;
 
     });
