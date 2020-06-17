@@ -22,20 +22,28 @@ class Scene4 extends Phaser.Scene {
   }
 
   create(){
+
+
+    //ajout variable
     this.scene_compte = 2;
+    this.nb_tricks = 0;
 
 
 
     this.rand_number = 0;
+
+    //ajout fond et perso
     this.add.image(0,0, "landscape_skate").setOrigin(0,0);
     this.text = this.add.text(150, 475, "Réalise des tricks ! ", {fontSize: '75px', fill: 'white', fontStyle: "bold"});
     this.perso = this.matter.add.sprite(20, 80, 'skate_avance', 'skate_avance_001.png');
     this.perso.setScale(0.7);
-
+    //ajout camera
       this.cameras.main.setBounds(0, 0, 5120, 650);
       this.cameras.main.startFollow(this.perso, true);
       this.matter.world.setBounds(0, 0,5120, 680);
       this.perso.setFlipX(true);
+
+      //ajout class bouton
 
       function Bouton(scene, x, y, texture){
         Phaser.Physics.Arcade.Image.call(this, scene, x, y, texture);
@@ -54,7 +62,7 @@ class Scene4 extends Phaser.Scene {
 
 
 
-
+      //ajout timer
 
       var text;
       var timedEvent;
@@ -97,7 +105,7 @@ class Scene4 extends Phaser.Scene {
 
 
 
-
+        //ajout anim
 
       this.frameName_skate_avance = this.anims.generateFrameNames('skate_avance', {
                              start: 1, end: 30, zeroPad: 1,
@@ -130,6 +138,8 @@ class Scene4 extends Phaser.Scene {
 
       this.perso.anims.play("skate_avance", true);
 
+      //ajout apparitionet disparition bouton tricks
+
 
       this.timedEvent = this.time.addEvent({ delay: 3000, callback: onEvent, callbackScope: this, repeat: -1 });
       function onEvent(){
@@ -142,23 +152,42 @@ class Scene4 extends Phaser.Scene {
         console.log(this.bouton_tricks.y);
         console.log(this.bouton_tricks.x);
         console.log(this.perso.x);
+        this.nb_tricks +=1;
 
-        this.time.delayedCall(900, ()=> {
-          console.log(this.bouton_tricks.toucher);
-          this.bouton_tricks.visible = false;
-          if (this.bouton_tricks.toucher == 0) {
+        if (this.nb_tricks < 2) {
+          this.time.delayedCall(1000, ()=> {
+            console.log(this.bouton_tricks.toucher);
+            this.bouton_tricks.visible = false;
+            if (this.bouton_tricks.toucher == 0) {
 
-            this.compteur_echec -=1;
-            this.reussis = 0;
-            this.scene.start("troisieme_scene", {compteur_echec: this.compteur_echec, scene_compte: this.scene_compte, score: this.score, reussis:this.reussis});
+              this.compteur_echec -=1;
+              this.reussis = 0;
+              this.scene.start("troisieme_scene", {compteur_echec: this.compteur_echec, scene_compte: this.scene_compte, score: this.score, reussis:this.reussis});
 
 
-          }
-        });
+            }
+          });
+        }
+        else {
+          this.time.delayedCall(800, ()=> {
+            console.log(this.bouton_tricks.toucher);
+            this.bouton_tricks.visible = false;
+            if (this.bouton_tricks.toucher == 0) {
+
+              this.compteur_echec -=1;
+              this.reussis = 0;
+              this.scene.start("troisieme_scene", {compteur_echec: this.compteur_echec, scene_compte: this.scene_compte, score: this.score, reussis:this.reussis});
+
+
+            }
+          });
+        }
+
+
 
       };
 
-
+      //faire qu'il est cliquable
       this.bouton_tricks.on("pointerdown", this.HitBouton, this);
 
 
@@ -167,6 +196,8 @@ class Scene4 extends Phaser.Scene {
   }
 
   update(){
+
+    //ajout de velocité perso et changement couleurs timer
     this.perso.setVelocityX(2.5);
     if (this.initialTime == 6) {
       this.timer.setTexture("timer_jaune");
@@ -175,11 +206,15 @@ class Scene4 extends Phaser.Scene {
       this.timer.setTexture("timer_rouge");
     }
 
+    console.log(this.nb_tricks);
+
 
 
 
   }
 
+
+//ajout fonction si appuyé
   HitBouton(){
 
     this.rand_number = Phaser.Math.Between(1,2);
@@ -201,7 +236,7 @@ class Scene4 extends Phaser.Scene {
       });
     }
 
-    this.time.delayedCall(900, ()=> {
+    this.time.delayedCall(1000, ()=> {
       this.bouton_tricks.toucher = 0;
 
     });
