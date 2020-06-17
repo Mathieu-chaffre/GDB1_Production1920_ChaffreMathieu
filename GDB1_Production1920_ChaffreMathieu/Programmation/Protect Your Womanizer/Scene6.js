@@ -16,7 +16,7 @@ class Scene6 extends Phaser.Scene {
   }
 
   create(){
-
+    //ajout de score et image
     this.add.image(0,0, "fond").setOrigin(0,0);
     this.add.image(639, 234, "logo");
 

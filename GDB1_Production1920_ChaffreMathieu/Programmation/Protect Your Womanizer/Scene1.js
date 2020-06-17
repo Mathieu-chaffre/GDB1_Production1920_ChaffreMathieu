@@ -18,6 +18,8 @@ class Scene1 extends Phaser.Scene {
   }
 
   create(){
+
+    //mise en place interface et interraction
     this.sound.add('theme');
 
 

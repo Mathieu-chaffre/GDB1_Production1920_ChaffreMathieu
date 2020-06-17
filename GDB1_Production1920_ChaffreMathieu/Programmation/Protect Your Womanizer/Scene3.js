@@ -26,12 +26,18 @@ class Scene3 extends Phaser.Scene {
   }
 
   create(){
+
+    //ajout des sons
     this.sound.add('applause');
     this.sound.add('boo');
 
+
+    //mise en place fond et variable pause
     this.pause_ = 1;
     this.add.image(0,0, "fond").setOrigin(0,0);
     this.coeur = this.add.image(641, 339, "coeur");
+
+    //ajout class bouton
 
     function Bouton(scene, x, y, texture){
       Phaser.Physics.Arcade.Image.call(this, scene, x, y, texture);
@@ -44,15 +50,17 @@ class Scene3 extends Phaser.Scene {
   Bouton.prototype.constructor = Bouton;
     this.bouton_pause = new Bouton(this,1211,64,"pause");
 
+    //ajout interraction avec le bouton
+
     this.bouton_pause.on("pointerdown", this.Pause, this);
 
 
 
 
-
+    //ajout compteur vie
     this.text = this.add.text(410, 480, "x"+ this.compteur_echec, {fontSize: '100px', fill: 'white', fontStyle: "bold"});
 
-
+    //check si le pause est activé et si il ne l'est pas et passage aux autres scene (redistribution)
     this.timedEvent = this.time.addEvent({ delay: 4000, callback: onEvent, callbackScope: this, repeat: -1 });
     function onEvent(){
       if (this.bouton_pause.pause == 1 && this.compteur_echec > 0) {
@@ -82,6 +90,8 @@ class Scene3 extends Phaser.Scene {
       }
     };
 
+    //ajout de son en fonction de la réaussite
+
     console.log(this.reussis)
     if (this.reussis == 1) {
       this.sound.play('applause', {volume: 1});
@@ -94,6 +104,8 @@ class Scene3 extends Phaser.Scene {
   }
 
   update(){
+
+    //ajout game over
     if (this.compteur_echec <= 0) {
       this.text.setText("Game over");
       this.text.y = 300;
@@ -107,6 +119,7 @@ class Scene3 extends Phaser.Scene {
 
   }
 
+//ajout focntion pause
   Pause(){
     if (this.bouton_pause.pause == 1) {
       this.physics.pause();

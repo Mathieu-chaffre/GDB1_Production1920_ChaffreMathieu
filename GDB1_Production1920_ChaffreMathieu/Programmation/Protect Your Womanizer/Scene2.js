@@ -32,18 +32,24 @@ class Scene2 extends Phaser.Scene {
   }
 
   create(){
+
+    //initialisation des variable
     this.reussis = 0;
     this.scene_compte = 1;
+
+    //ajout des textes et du fond
     this.fond = this.add.image(0,0, "landscape_parachute").setOrigin(0,0);
 
-    this.text = this.add.text(50, 1280, "Ramène ton dragueur sur la Terre Ferme!", {fontSize: '50px', fill: 'black', fontStyle: "bold"});
+    this.text = this.add.text(50, 1280, "Pose ton dragueur avant le sol !", {fontSize: '50px', fill: 'black', fontStyle: "bold"});
 
 
-
+    //ajout perso
     this.perso = this.matter.add.sprite(500, 400, 'parachute', 'parachute_1.png').setInteractive();
     this.perso.setScale(0.7);
 
     this.perso.body.label = "perso";
+
+    //animation
 
 
     this.frameName = this.anims.generateFrameNames('parachute', {
@@ -66,11 +72,15 @@ class Scene2 extends Phaser.Scene {
 
 
 
-
+//ajout immeuble
     this.immeuble = this.matter.add.image(1353, 3409, "immeuble", null, { isStatic: true });
+
+    //ajout camera follow
     this.cameras.main.setBounds(0, 0, 1280, 4320);
       this.cameras.main.startFollow(this.perso, true);
       this.matter.world.setBounds(0, 0,1280, 4320);
+
+      //dire qu'il est déplaçable
 
       this.input.setDraggable(this.perso);
 
@@ -81,19 +91,23 @@ class Scene2 extends Phaser.Scene {
 
     });
 
+
+    //définir le label de collision
     this.immeuble.body.label = "immeuble";
+
+    //ajout deuxième immeuble
 
     this.immeuble_2 = this.matter.add.image(-200, 4200, "immeuble", null, { isStatic: true });
     this.immeuble_2.body.label = "immeuble_2";
 
 
-
+    //ajout des collisions
     this.matter.world.on('collisionstart', function (event) {
         for (var i = 0; i < event.pairs.length; i++) {
             var bodyA = getRootBody(event.pairs[i].bodyA);
             var bodyB = getRootBody(event.pairs[i].bodyB);
             console.log(bodyA);
-
+            //check les différentes collisions
             if ((bodyA.label === 'perso' && bodyB.label === 'immeuble') || (bodyB.label === 'immeuble' && bodyA.label === 'perso')) {
               if (this.perso.y < 2440) {
                 this.score += 10 * this.initialTime;
@@ -115,6 +129,8 @@ class Scene2 extends Phaser.Scene {
         }
     }, this);
 
+    //récupérer les labels avec les objet parents
+
 function getRootBody(body) {
     if (body.parent === body) {
         return body;
@@ -127,7 +143,7 @@ function getRootBody(body) {
 
 
 
-
+//timer
   var text;
   var timedEvent;
 
@@ -165,6 +181,8 @@ function getRootBody(body) {
 
     console.log(this.perso.y);
 
+    //ajout echec micro-jeu
+
     if (this.perso.y >= 4105) {
       this.perso.anims.play('boom', true);
       this.perso.y = 4105;
@@ -176,6 +194,8 @@ function getRootBody(body) {
       });
 
     }
+
+    //changement état chrono
     if (this.initialTime == 5) {
       this.timer.setTexture("timer_jaune");
     }

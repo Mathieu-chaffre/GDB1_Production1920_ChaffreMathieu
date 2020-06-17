@@ -22,6 +22,8 @@ class Scene5 extends Phaser.Scene {
   }
 
   create(){
+
+    //mise en place vairable et texte
     this.scene_compte = 3;
 
     this.text_indication = this.add.text(50,100, "Eclaire ton\n dragueur !", {fontSize: '75px', fill: 'white', fontStyle: "bold"});
@@ -39,6 +41,8 @@ class Scene5 extends Phaser.Scene {
     this.landscape = this.add.image(0,0, "landscape_dance").setOrigin(0,0);
     this.monde = this.physics.world.setBounds(0, 0,1280, 720);
 
+    //ajout masque de lumière
+
     var lumiere = this.make.sprite({
         x: 400,
         y: 300,
@@ -46,10 +50,12 @@ class Scene5 extends Phaser.Scene {
         add: false
     });
 
-
+    //ajout perso
     this.rand_pos_x= Phaser.Math.Between(50, 1200);
 
      var perso = this.physics.add.sprite(this.rand_pos_x,700, 'dance', "dance_perso_1001.png");
+
+     //ajout anims et perso secondaires
 
     this.frameName = this.anims.generateFrameNames('dance', {
                            start: 1, end: 30, zeroPad: 1,
@@ -86,11 +92,13 @@ class Scene5 extends Phaser.Scene {
 
 
 
-
+    //faire que les perso soit masqué par du noir sauf sur la lumière
     this.landscape.mask = new Phaser.Display.Masks.BitmapMask(this, lumiere);
      perso.mask = new Phaser.Display.Masks.BitmapMask(this, lumiere);
     this.perso_2.mask = new Phaser.Display.Masks.BitmapMask(this, lumiere);
     this.perso_3.mask = new Phaser.Display.Masks.BitmapMask(this, lumiere);
+
+    //déplacement de la lumière par la souris
 
 
     this.input.on("pointermove", function(pointer, gameObjects){
@@ -110,7 +118,7 @@ class Scene5 extends Phaser.Scene {
 
     });
 
-
+    //ajout de points
 
     this.timedEvent = this.time.addEvent({
       delay: 200,
@@ -138,7 +146,7 @@ class Scene5 extends Phaser.Scene {
 
 
 
-
+    //ajout mouvement
     this.timedEvent = this.time.addEvent({
       delay: 1000,
       callback: mouv,
@@ -172,7 +180,7 @@ class Scene5 extends Phaser.Scene {
 
   perso.setSize(200,458);
 
-
+  //timer
   var text;
   var timedEvent;
 
@@ -238,7 +246,7 @@ class Scene5 extends Phaser.Scene {
         this.temps = 0;
       });
     }*/
-
+    //changement timer
     if (this.initialTime == 6) {
       this.timer.setTexture("timer_jaune");
     }
