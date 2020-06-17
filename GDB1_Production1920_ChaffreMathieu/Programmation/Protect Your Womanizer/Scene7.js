@@ -29,7 +29,7 @@ class Scene7 extends Phaser.Scene {
 
     this.fond = this.add.image(0,0, "fond").setOrigin(0,0);
 
-
+    //ajout class sprite
     function Punching_ball(scene, x, y, texture){
       Phaser.Physics.Arcade.Sprite.call(this, scene, x, y, texture);
       scene.add.existing(this);
@@ -48,7 +48,7 @@ class Scene7 extends Phaser.Scene {
 
     this.punching_ball = new Punching_ball(this,585, 500, "punching_ball", "punchin_ball001.png").setScale(0.7).setSize(220, 470).setOffset(200, 0).setFlipX(true);
 
-
+    //ajout perso
     function Perso(scene, x, y, texture){
       Phaser.Physics.Arcade.Sprite.call(this, scene, x, y, texture);
       scene.add.existing(this);
@@ -69,7 +69,7 @@ class Scene7 extends Phaser.Scene {
 
 
 
-
+    //ajout anims
 
     this.frameName = this.anims.generateFrameNames('boxe', {
                            start: 1, end: 30, zeroPad: 1,
@@ -115,6 +115,7 @@ class Scene7 extends Phaser.Scene {
 
     this.perso.setCollideWorldBounds(true);
     this.punching_ball.setCollideWorldBounds(true);
+    //ajout interraction
 
     this.punching_ball.on("pointerdown", this.Attaque, this);
     this.punching_ball.on("pointerup", this.EndAttaque, this);
@@ -131,13 +132,13 @@ class Scene7 extends Phaser.Scene {
     this.save_x = this.perso.x;
     this.save_pointer = 0;
     this.swipe = false;
-
+    //ajout swipe
     this.input.on('pointerdown', this.PointerDown, this);
 
     this.input.on('pointerup', this.PointerUp, this);
 
     this.input.on('pointermove', this.Pointermove, this);
-
+    //ajout timer
 
     var text;
     var timedEvent;
@@ -184,6 +185,7 @@ class Scene7 extends Phaser.Scene {
   }
 
   update(){
+    //changement état timer
 console.log(this.perso.attaque);
 if (this.initialTime == 5) {
   this.timer.setTexture("timer_jaune");
@@ -200,7 +202,7 @@ else if (this.initialTime == 2) {
 
 
   }
-
+  //mise en place focntion attaque et de défaite et esquive
   Attaque(){
     if (this.perso.touche == 0 && this.punching_ball.coups < 5) {
       this.perso.attaque = 1;
@@ -238,13 +240,13 @@ else if (this.initialTime == 2) {
 
 
   }
-
+  //relevé de souris sur le puncing ball
 EndAttaque(){
 
     this.perso.attaque = 0;
   }
 
-
+//définition swipe
 
   PointerDown(pointer){
     this.swipe = true;
